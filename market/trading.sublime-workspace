@@ -1,0 +1,2379 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"on",
+				"on_error"
+			],
+			[
+				"f",
+				"from"
+			],
+			[
+				"json",
+				"json_new"
+			],
+			[
+				"jso",
+				"json_new"
+			],
+			[
+				"webs",
+				"websocket"
+			],
+			[
+				"time",
+				"time_range"
+			],
+			[
+				"resa",
+				"resample_frame"
+			],
+			[
+				"resampl",
+				"resample_frame"
+			],
+			[
+				"resamp",
+				"resample_frame"
+			],
+			[
+				"res",
+				"resample_frame"
+			],
+			[
+				"pair",
+				"pair"
+			],
+			[
+				"resam",
+				"resample"
+			],
+			[
+				"def",
+				"defs\tMethod"
+			],
+			[
+				"st",
+				"setup_base_pattern"
+			],
+			[
+				"Conte",
+				"ContextTerminated"
+			],
+			[
+				"pr",
+				"proc2"
+			],
+			[
+				"thre",
+				"thread1"
+			],
+			[
+				"Mar",
+				"MockedMarketPair"
+			],
+			[
+				"pro",
+				"proc2"
+			],
+			[
+				"proc",
+				"proc1"
+			],
+			[
+				"mock",
+				"mock_server"
+			],
+			[
+				"por",
+				"proc2"
+			],
+			[
+				"M",
+				"MockedMarketPair"
+			],
+			[
+				"Market",
+				"MarketParser"
+			],
+			[
+				"m",
+				"main"
+			],
+			[
+				"EUR",
+				"EURUSD"
+			],
+			[
+				"Data",
+				"DataFrame"
+			],
+			[
+				"Dat",
+				"DataFrameClient"
+			],
+			[
+				"pull",
+				"pull_socket"
+			],
+			[
+				"MARKE",
+				"MARKET_PUSH_PORTS"
+			],
+			[
+				"db",
+				"db_influx"
+			],
+			[
+				"MA",
+				"MarketParser"
+			],
+			[
+				"market",
+				"market_pair"
+			],
+			[
+				"smt",
+				"smtp_connection"
+			],
+			[
+				"SER",
+				"SERVER_SUB_PORT"
+			],
+			[
+				"SERE",
+				"SERVER_PUSH_PORT"
+			],
+			[
+				"dt",
+				"date"
+			],
+			[
+				"parse",
+				"parsed_data"
+			],
+			[
+				"inde",
+				"index_last"
+			],
+			[
+				"ma",
+				"market"
+			],
+			[
+				"mark",
+				"market_condition"
+			],
+			[
+				"open",
+				"open_x"
+			],
+			[
+				"main",
+				"main_logic"
+			],
+			[
+				"par",
+				"parsed_data"
+			],
+			[
+				"yea",
+				"year_val"
+			],
+			[
+				"year",
+				"year"
+			],
+			[
+				"ran",
+				"range2"
+			],
+			[
+				"range",
+				"range1"
+			],
+			[
+				"index",
+				"index_last"
+			],
+			[
+				"_ran",
+				"_range_2"
+			],
+			[
+				"las",
+				"last_val"
+			],
+			[
+				"DataFra",
+				"DataFrameClient"
+			],
+			[
+				"push",
+				"push"
+			],
+			[
+				"df",
+				"df_tick"
+			],
+			[
+				"string",
+				"string_delimiter"
+			],
+			[
+				"Maket",
+				"MarketParser"
+			],
+			[
+				"Infl",
+				"InfluxDBClientError"
+			],
+			[
+				"dat",
+				"database"
+			],
+			[
+				"IN",
+				"INTERMED_PORT"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"va",
+				"validate_resampling"
+			],
+			[
+				"pa",
+				"pair_n"
+			],
+			[
+				"loop",
+				"loop_frame"
+			],
+			[
+				"rage",
+				"range_2"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"dum",
+				"dump_data"
+			],
+			[
+				"ra",
+				"range_2"
+			],
+			[
+				"dfH",
+				"dfH4"
+			],
+			[
+				"dfM",
+				"dfM15"
+			],
+			[
+				"dm",
+				"dfM15"
+			],
+			[
+				"thread",
+				"thread1"
+			],
+			[
+				"data",
+				"data_list"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"backgr",
+				"background-color\tproperty"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"border",
+				"border\tproperty"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"background",
+				"background-color\tproperty"
+			],
+			[
+				"padding",
+				"padding-left\tproperty"
+			],
+			[
+				"upd",
+				"update_nbr"
+			],
+			[
+				"story",
+				"story_id"
+			],
+			[
+				"paddin",
+				"padding-left\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"object",
+				"object-fit\tproperty"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"loading",
+				"loading-btn"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"n",
+				"inherit\toutline"
+			],
+			[
+				"c",
+				"cover\tobject-fit"
+			],
+			[
+				"obje",
+				"object-fit\tproperty"
+			],
+			[
+				"fa-angle",
+				"fa-angle-double-down"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"lt",
+				"lt_cond"
+			],
+			[
+				"Thre",
+				"Thresh2"
+			],
+			[
+				"T",
+				"Thresh1"
+			],
+			[
+				"top",
+				"top_kernel"
+			],
+			[
+				"mor",
+				"morphologyEx"
+			],
+			[
+				"MOR",
+				"MORPH_CLOSE"
+			],
+			[
+				"er",
+				"erosion"
+			],
+			[
+				"nois",
+				"noise"
+			],
+			[
+				"bila",
+				"bilateral_blur"
+			],
+			[
+				"media",
+				"median"
+			],
+			[
+				"Gauss",
+				"GaussianBlur"
+			],
+			[
+				"mater",
+				"materialize"
+			],
+			[
+				"warp",
+				"warpPerspective"
+			],
+			[
+				"get",
+				"getPerspectiveTransform"
+			],
+			[
+				"sho",
+				"shoe_black"
+			],
+			[
+				"Ga",
+				"GaussianBlur"
+			],
+			[
+				"titl",
+				"titles"
+			],
+			[
+				"gaussi",
+				"Gaussian"
+			],
+			[
+				"O",
+				"Otsu"
+			],
+			[
+				"Thresh",
+				"Thresholding"
+			],
+			[
+				"TH",
+				"THRESH_OTSU"
+			],
+			[
+				"THRES",
+				"THRESH_BINARY"
+			],
+			[
+				"thres",
+				"thresholding"
+			],
+			[
+				"sub",
+				"subplot"
+			],
+			[
+				"ADA",
+				"ADAPTIVE_THRESH_GAUSSIAN_C"
+			],
+			[
+				"THRE",
+				"THRESH_BINARY"
+			],
+			[
+				"adap",
+				"adaptiveThreshold"
+			],
+			[
+				"img",
+				"img"
+			],
+			[
+				"imag",
+				"images"
+			],
+			[
+				"title",
+				"titles"
+			],
+			[
+				"i",
+				"images"
+			],
+			[
+				"s",
+				"start"
+			],
+			[
+				"mask",
+				"mask_inv"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/cyth/fib.pyx",
+			"settings":
+			{
+				"buffer_size": 156,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "fib.pyx"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/parse_index.py",
+			"settings":
+			{
+				"buffer_size": 1672,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/clear_database.py",
+			"settings":
+			{
+				"buffer_size": 533,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/cyth/fact.pyx",
+			"settings":
+			{
+				"buffer_size": 604,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/cyth/loop.pyx",
+			"settings":
+			{
+				"buffer_size": 129,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "loop.pyx"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/cyth/practice.py",
+			"settings":
+			{
+				"buffer_size": 4,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "practice.py"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/dmx_connector.py",
+			"settings":
+			{
+				"buffer_size": 17061,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/api.py",
+			"settings":
+			{
+				"buffer_size": 8273,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/patterns/doubleliner.py",
+			"settings":
+			{
+				"buffer_size": 6946,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/setup.py",
+			"settings":
+			{
+				"buffer_size": 244,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/config.py",
+			"settings":
+			{
+				"buffer_size": 738,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "parse_index.py",
+			"settings":
+			{
+				"buffer_size": 1616,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/.config/sublime-text-3/Packages/Pylinter/Pylinter.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/patterns/oneliner.py",
+			"settings":
+			{
+				"buffer_size": 5434,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "apx.pyx",
+			"settings":
+			{
+				"buffer_size": 8591,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/engine/__init__.py",
+			"settings":
+			{
+				"buffer_size": 650,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "remote.py",
+			"settings":
+			{
+				"buffer_size": 1262,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "remote.py"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/strategy/base.py",
+			"settings":
+			{
+				"buffer_size": 706,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/tests/test_pytest_tuts.py",
+			"settings":
+			{
+				"buffer_size": 911,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/tests/mocked_classes.py",
+			"settings":
+			{
+				"buffer_size": 719,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "mocked_classes.py"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/mock_server.py",
+			"settings":
+			{
+				"buffer_size": 1260,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "clear_database.py",
+			"settings":
+			{
+				"buffer_size": 554,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/tests/test_market.py",
+			"settings":
+			{
+				"buffer_size": 1899,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/tests/test_patterns.py",
+			"settings":
+			{
+				"buffer_size": 1106,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/apx.pyx",
+			"settings":
+			{
+				"buffer_size": 8441,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/trade_strategy.py",
+			"settings":
+			{
+				"buffer_size": 4,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "trade_strategy.py"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/codex.pyx",
+			"settings":
+			{
+				"buffer_size": 257,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "codex.pyx"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/codex.pxd",
+			"settings":
+			{
+				"buffer_size": 113,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "codex.pxd"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/axd.pyx",
+			"settings":
+			{
+				"buffer_size": 240,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "axd.pyx"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/apx.c",
+			"settings":
+			{
+				"buffer_size": 514639,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/binary.py",
+			"settings":
+			{
+				"buffer_size": 30,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/setup.py",
+			"settings":
+			{
+				"buffer_size": 124,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "setup.py"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/config.py",
+			"settings":
+			{
+				"buffer_size": 629,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "config.py"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/cyth/setup.py",
+			"settings":
+			{
+				"buffer_size": 175,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/params.py",
+			"settings":
+			{
+				"buffer_size": 30,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/cyth/defo_run.py",
+			"settings":
+			{
+				"buffer_size": 39,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "defo_run.py"
+			}
+		},
+		{
+			"file": "api.py",
+			"settings":
+			{
+				"buffer_size": 11530,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/devcode/Desktop/keras-tensor/tradex/engine/connector.py",
+			"settings":
+			{
+				"buffer_size": 17200,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"scs",
+				"Set Syntax: SCSS"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Package Control:",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set",
+				"Set Syntax: TypeScriptReact"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 338.0,
+		"history":
+		[
+			"clear",
+			"exit()",
+			"exit",
+			"live-server",
+			"exit",
+			"killall -9 node",
+			"exit",
+			"exit()",
+			"clear",
+			"class Developer:",
+			"import testing.py",
+			"import testing",
+			"from ..testing import Developer",
+			"from testing import Developer",
+			"from .testing import Developer",
+			"Developer()",
+			"python",
+			"from testing import Developer",
+			"dd"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/devcode/Desktop/keras-tensor",
+		"/home/devcode/Desktop/keras-tensor/tradex",
+		"/home/devcode/Desktop/keras-tensor/tradex/engine"
+	],
+	"file_history":
+	[
+		"/home/devcode/hydrino/hydrak/educa/educa/settings.py",
+		"/home/devcode/Desktop/keras-tensor/keras/lib/python3.6/site-packages/websocket/_app.py",
+		"/home/devcode/Desktop/keras-tensor/keras/lib/python3.6/site-packages/tornado/websocket.py",
+		"/home/devcode/Desktop/pyfinance/tornado/websockete.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/__init__.py",
+		"/home/devcode/.config/sublime-text-3/Packages/User/Pylinter.sublime-settings",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/backtest.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/patterns/base.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/tests/patterns.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/test.txt",
+		"/home/devcode/Desktop/keras-tensor/tradex/tests/test_wallet.py",
+		"/home/devcode/Desktop/keras-tensor/keras/bin/activate",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/apx.c",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/axd.c",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/__init__.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/__init__.py",
+		"/home/devcode/Desktop/keras-tensor/gh.ss",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/clear_database.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/axd.pyx",
+		"/home/devcode/Desktop/keras-tensor/xine_trade/patterns/multiliner.py",
+		"/home/devcode/Desktop/keras-tensor/darwin_x/tools/dwx_zeromq_connector/v2.0.1/EXAMPLES/TEMPLATE/STRATEGIES/BASE/DWZ_ZMQ_Strategy.py",
+		"/home/devcode/Desktop/keras-tensor/xine_trade/setup.py",
+		"/home/devcode/Desktop/keras-tensor/xine_trade/__init__.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/patterns/doubleliner.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/patterns/ju.json",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/patterns/multiliner.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/patterns/oneliner.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/patterns/base.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/profi.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/parse_p.c",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/parse_p.pyx",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/patterns/base_1.pxd",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/patterns/base_1.c",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/patterns/base_1.pyx",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/patterns/multi.pxd",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/patterns/multi.pyx",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/codex.c",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/apx.pyx",
+		"/home/devcode/Desktop/keras-tensor/zeromq/dmx_connector.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/dmx_connector.py",
+		"/home/devcode/Desktop/keras-tensor/cyth/defo.py",
+		"/home/devcode/Desktop/keras-tensor/cyth/defo.pyx",
+		"/home/devcode/Desktop/keras-tensor/cyth/cython_class.pyx",
+		"/home/devcode/Desktop/keras-tensor/cyth/python_class.py",
+		"/home/devcode/Desktop/keras-tensor/cyth/mult.pyx",
+		"/home/devcode/Desktop/keras-tensor/cyth/fib.c",
+		"/home/devcode/Desktop/keras-tensor/cyth/mult.c",
+		"/home/devcode/Desktop/keras-tensor/parse_index.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/params.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/section_1(Prelim-SocketPatterns)/multithreading9.py",
+		"/home/devcode/Desktop/keras-tensor/keras/lib/python3.6/site-packages/zmq/tests/__init__.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/multithreading9.py",
+		"/home/devcode/Desktop/keras-tensor/keras/lib/python3.6/site-packages/notebook/static/edit/js/main.min.js",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/variables/src/sass/app.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/range/src/sass/app.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/functions/src/sass/app.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/if/src/sass/app.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/tiny/src/sass/app.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/bem/public/index.html",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/bem/src/sass/app.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/range/src/sass/_variables.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/nesting/src/sass/app.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/extend/public/index.html",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/extend/public/app.css",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/functions/src/sass/_mixins.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/range/public/app.css",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/if/src/sass/_mixins.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/if/public/app.css",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/tiny/public/app.css",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/mixins/public/app.css",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/variables/public/app.css",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/parent/public/app.css",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/nesting/public/app.css",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/functions/public/app.css",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/bem/public/app.css",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/extend/src/sass/app.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/mixins/src/sass/_mixins.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/mixins/src/sass/app.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/range/src/sass/_mixins.scss",
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/parent/src/sass/app.scss",
+		"/home/devcode/Desktop/keras-tensor/keras/lib/python3.6/site-packages/zmq/sugar/socket.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/section_1(Prelim-SocketPatterns)/weather_client_network6.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/section_1(Prelim-SocketPatterns)/weather_update6.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/section_1(Prelim-SocketPatterns)/weather_one_way_server2.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/section_1(Prelim-SocketPatterns)/sink3.py",
+		"/home/devcode/Desktop/keras-tensor/zeromq/weather_client_network6.py",
+		"/home/devcode/Desktop/docs/font/css/all.css",
+		"/home/devcode/Desktop/docs/4.0/utilities/flex.md",
+		"/home/devcode/Desktop/docs/4.0/examples/cover/cover.css",
+		"/home/devcode/Desktop/docs/4.0/examples/navbars/navbar.css",
+		"/home/devcode/Desktop/pageant/pageant/beauty/templates/home.html",
+		"/home/devcode/Desktop/pyfinance/financ/AlgorithmicTrading/patterns/__init__.py",
+		"/home/devcode/Desktop/django-projects/scrape/opencv-tuts/image_gradients.py",
+		"/home/devcode/Desktop/django-projects/scrape/opencv-tuts/morph_transformations.py",
+		"/home/devcode/Desktop/django-projects/scrape/opencv-tuts/smoothin.py",
+		"/home/devcode/Desktop/material-react/project/index.html",
+		"/home/devcode/.cache/.fr-d29SDD/starter-template/index.html",
+		"/home/devcode/Downloads/starter-template/index.html",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/PIL/ImageFilter.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/re.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/encodings/punycode.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/tarfile.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/sre_parse.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/PIL/ImageDraw2.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/PIL/ImageDraw.py",
+		"/home/devcode/Desktop/django-projects/scrape/seleproj/execpy.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/pip/_internal/download.py",
+		"/home/devcode/Desktop/django-projects/scrape/test.csv",
+		"/home/devcode/Desktop/django-projects/scrape/sede.py",
+		"/home/devcode/Desktop/django-projects/scrape/checki.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/selenium/webdriver/firefox/options.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/selenium/webdriver/firefox/firefox_profile.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/base64.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/pip/_internal/utils/misc.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/pip/_vendor/webencodings/__init__.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/encodings/ascii.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/codecs.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/setuptools/_vendor/pyparsing.py",
+		"/home/devcode/Desktop/django-projects/scrape/extract_igbo_names.py",
+		"/home/devcode/Desktop/django-projects/scrape/test_react.py",
+		"/home/devcode/Desktop/django-projects/scrape/facebook.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/random.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/_collections_abc.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/collections/__init__.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/pip/_internal/utils/ui.py",
+		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/bs4/element.py",
+		"/home/devcode/Desktop/django-projects/Djang-React/react/frontend/node_modules/react-redux-loading-bar/build/loading_bar.js",
+		"/home/devcode/Desktop/django-projects/Djang-React/react/frontend/node_modules/react-redux-loading-bar/index.d.ts"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 232.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"...:",
+			"MarketParser",
+			"...:",
+			"self",
+			"threading",
+			"\t\n",
+			":\n",
+			"_pyx_t_1"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 16,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/devcode/Desktop/keras-tensor/cyth/fib.pyx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								156
+							]
+						],
+						"settings":
+						{
+							"auto_name": "fib.pyx",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/parse_index.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								400,
+								400
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/clear_database.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 533,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/devcode/Desktop/keras-tensor/cyth/fact.pyx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								604,
+								604
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/devcode/Desktop/keras-tensor/cyth/loop.pyx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								110,
+								110
+							]
+						],
+						"settings":
+						{
+							"auto_name": "loop.pyx",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/devcode/Desktop/keras-tensor/cyth/practice.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4,
+								4
+							]
+						],
+						"settings":
+						{
+							"auto_name": "practice.py",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/dmx_connector.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15847,
+								15847
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9354.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/api.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8273,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5695,
+								5695
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5078.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/patterns/doubleliner.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6124,
+								6124
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/setup.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/config.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 738,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							],
+							[
+								38,
+								38
+							],
+							[
+								738,
+								738
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "parse_index.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1616,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								318,
+								318
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 276.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/home/devcode/.config/sublime-text-3/Packages/Pylinter/Pylinter.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/patterns/oneliner.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5434,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4153,
+								4153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3005.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "apx.pyx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1595,
+								1595
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python 3/Python3.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1430.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/engine/__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								533,
+								533
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 254.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "remote.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1135,
+								1135
+							]
+						],
+						"settings":
+						{
+							"auto_name": "remote.py",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 829.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/strategy/base.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								706,
+								706
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/tests/test_pytest_tuts.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 911,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								773,
+								773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 64.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/tests/mocked_classes.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 719,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								718,
+								718
+							]
+						],
+						"settings":
+						{
+							"auto_name": "mocked_classes.py",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 599.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/mock_server.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "clear_database.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								413,
+								413
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/tests/test_market.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								288,
+								288
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/tests/test_patterns.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1092,
+								1092
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 50.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/apx.pyx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8441,
+								8441
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7054.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/trade_strategy.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4,
+								4
+							]
+						],
+						"settings":
+						{
+							"auto_name": "trade_strategy.py",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/codex.pyx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								231,
+								231
+							]
+						],
+						"settings":
+						{
+							"auto_name": "codex.pyx",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/codex.pxd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								113
+							]
+						],
+						"settings":
+						{
+							"auto_name": "codex.pxd",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/axd.pyx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"auto_name": "axd.pyx",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/apx.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 514639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/binary.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/setup.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"auto_name": "setup.py",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/config.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								495,
+								495
+							]
+						],
+						"settings":
+						{
+							"auto_name": "config.py",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "/home/devcode/Desktop/keras-tensor/cyth/setup.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/params.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "/home/devcode/Desktop/keras-tensor/cyth/defo_run.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 39,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"auto_name": "defo_run.py",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 36,
+					"file": "api.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11530,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8722,
+								8722
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python 3/Python3.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7452.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "/home/devcode/Desktop/keras-tensor/tradex/engine/connector.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2620,
+								2620
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1587.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 80.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.489373007438,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 508.0
+	},
+	"output.git":
+	{
+		"height": 31.0
+	},
+	"pinned_build_system": "",
+	"project": "/home/devcode/Desktop/keras-tensor/trading.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"email",
+				"templates/team/email_instructions.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
