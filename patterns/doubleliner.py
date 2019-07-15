@@ -5,23 +5,26 @@ import numpy as np
 
 
 class TwoLinePattern(BasePattern):
-    
+
     f"""
-    This class determines multiple candlesticks and if they match a peculiar pattern or not
+    This class determines multiple candlesticks and
+    if they match a peculiar pattern or not
     appends 1 or 0 depending on if condition is true or not
-    
+
     Methods:
-        
-        iterate() : >>> This method loops through array of candle bars and tries to determine if
+
+        iterate() : >>> This method loops through array of candle bars
+                        and tries to determine if
                         it falls as a pattern or not
-                        
-        confirm_bull_pattern(): >>> This method receives open,high,low,close values and tries to output 
-        if the pattern indicates upward movement
-        
-        confirm_bear_pattern(): >>> This method receives open,high,low,close values and tries to output 
-        if the pattern indicates downward movement
-    
-    
+
+        confirm_bull_pattern(): >>> This method receives open,high,low,
+                        close values and tries to output
+                        if the pattern indicates upward movement
+
+        confirm_bear_pattern(): >>> This method receives open,high,low,close
+                        values and tries to output
+                        if the pattern indicates downward movement
+
     """
     
     def confirm_bull_pattern(self,*args):
@@ -34,19 +37,19 @@ class TwoLinePattern(BasePattern):
         self.truth = []
         ad = self.df
         for x,y in enumerate(ad):
-            if x-1 == -1:
+            if x - 1 == -1:
                 self.truth.append(0)
                 continue
-            
+
             last = ad[x-1]
             current = y
-            
+
             last_op,last_high,last_low,last_close = last[0],last[1],last[2],last[3]
             current_op,current_high,current_low,current_close = current[0],current[1],current[2],current[3]
-            
+
             lt = self.f(last_op,last_close)
             ct = self.f(current_op,current_close)
-            
+
             if lt == 'Bearish'and ct == 'Bullish':
                 integer = self.confirm_bull_pattern(
                     (last_op,last_high,last_low,last_close),

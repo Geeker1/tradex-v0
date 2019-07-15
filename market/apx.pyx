@@ -337,14 +337,14 @@ cdef class MarketParser(MarketPair):
 		pass
 
 	"""
-	
-	#####################################################################
-
-			This is the main logic and would be responsible 
 
 	#####################################################################
 
-	
+			This is the main logic and would be responsible
+
+	#####################################################################
+
+
 	"""
 
 	def main_logic(self):
@@ -365,6 +365,6 @@ cdef class MarketParser(MarketPair):
 
 
 cpdef main():
-	MarketParser('EURUSD')
+	return MarketParser('EURUSD')
 
 

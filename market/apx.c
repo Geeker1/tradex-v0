@@ -6456,7 +6456,7 @@ static PyObject *__pyx_pf_6tradex_6market_3apx_12MarketParser_8__setstate_cython
  * 
  * 
  * cpdef main():             # <<<<<<<<<<<<<<
- * 	MarketParser('EURUSD')
+ * 	return MarketParser('EURUSD')
  * 
  */
 
@@ -6470,25 +6470,26 @@ static PyObject *__pyx_f_6tradex_6market_3apx_main(CYTHON_UNUSED int __pyx_skip_
   /* "tradex/market/apx.pyx":368
  * 
  * cpdef main():
- * 	MarketParser('EURUSD')             # <<<<<<<<<<<<<<
+ * 	return MarketParser('EURUSD')             # <<<<<<<<<<<<<<
  * 
  * 
  */
+  __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_6tradex_6market_3apx_MarketParser), __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 368, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_r = __pyx_t_1;
+  __pyx_t_1 = 0;
+  goto __pyx_L0;
 
   /* "tradex/market/apx.pyx":367
  * 
  * 
  * cpdef main():             # <<<<<<<<<<<<<<
- * 	MarketParser('EURUSD')
+ * 	return MarketParser('EURUSD')
  * 
  */
 
   /* function exit code */
-  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
-  goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_AddTraceback("tradex.market.apx.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -8227,7 +8228,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "tradex/market/apx.pyx":368
  * 
  * cpdef main():
- * 	MarketParser('EURUSD')             # <<<<<<<<<<<<<<
+ * 	return MarketParser('EURUSD')             # <<<<<<<<<<<<<<
  * 
  * 
  */
