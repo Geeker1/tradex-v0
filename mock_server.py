@@ -1,15 +1,17 @@
 import zmq
-from tradex.config import MOCK_PORT
+from tradex.config import MOCK_SUB_PORT, MOCK_ROUTER_PORT
 import time
 from tradex.market.clear_database import main as mo
-from tradex.market.parse_index import parse_hst
+from tradex.market.fetch_history_hst import parse_hst
 from tradex.tests.mocked_classes import MockedMarketPair
 from datetime import datetime, timedelta
 from threading import Thread
 import pandas as pd
+from threading import Thread
+import logging
 
 
-def publish(port=MOCK_PORT):
+def publish(port=MOCK_SUB_PORT):
 
     context = zmq.Context()
     publish = context.socket(zmq.PUB)
@@ -37,28 +39,15 @@ def publish(port=MOCK_PORT):
     context.term()
 
 
-def main():
+def req_response():
+    ctx = zmq.Context()
+    sock = ctx.socket(zmq.ROUTER)
+    sock.bind(f'tcp://*:{MOCK_ROUTER_PORT}')
 
-    mo('EURUSD', True)
+    msg = sock.recv_multipart()
+    sock.send_multipart([msg[0], b"", b"ok"])
+    logging.info("Successfully sent message to receiver socket....")
 
-    x = MockedMarketPair('USDCHF')
-
-    thread1 = Thread(target=publish)
-    thread2 = Thread(target=x.start)
-    thread3 = Thread(target=x.logic_contained)
-
-    thread1.start()
-    thread2.start()
-    thread3.start()
-
-    thread1.join()
-    print('Thread 1 cut out successfully')
-
-    print('Is publish thread alive ?', thread1.is_alive())
-    print('Is start thread alive ?', thread2.is_alive())
-    print('Is logic thread alive ?', thread3.is_alive())
-
-    mo('EURUSD', True)
-
-if __name__ == '__main__':
-    main()
+    sock.close()
+    ctx.term()
+    logging.info("Breaking out of function....all successful....")

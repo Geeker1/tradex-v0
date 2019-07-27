@@ -39,7 +39,7 @@ func (b XPubXSubInterMediary) SetUpPubServer(ch chan string) {
 	c,_ := zmq.NewContext()
 	pub, _ := c.NewSocket(zmq.PUB)
 	pub.SetIdentity("pub1")
-	pub.Connect(("tcp://localhost:"+strconv.Itoa(b.XsubPortNo)))
+	pub.Connect("tcp://localhost:"+strconv.Itoa(b.XsubPortNo))
 	defer pub.Unbind("tcp://localhost:"+strconv.Itoa(b.XsubPortNo))
 	defer pub.Close()
 
@@ -52,11 +52,12 @@ func (b XPubXSubInterMediary) SetUpPubServer(ch chan string) {
 	ch <- "kill"
 }
 
+
 func (b XPubXSubInterMediary) SetUpSubClient(ch chan string) {
 	c,_ := zmq.NewContext()
 	sub, _ := c.NewSocket(zmq.SUB)
 	sub.SetIdentity("sub1")
-	sub.SetSubscribe("hello")
+	sub.SetSubscribe("")
 	sub.Connect(("tcp://localhost:"+strconv.Itoa(b.XpubPortNo)))
 	// sub.Set
 	defer sub.Close()

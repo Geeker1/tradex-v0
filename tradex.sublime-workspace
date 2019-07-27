@@ -4,6 +4,310 @@
 		"selected_items":
 		[
 			[
+				"Content",
+				"Content-Type"
+			],
+			[
+				"frame",
+				"frame2"
+			],
+			[
+				"frma",
+				"frame"
+			],
+			[
+				"in",
+				"input_list"
+			],
+			[
+				"get",
+				"get_and_post_data"
+			],
+			[
+				"fetch",
+				"fetch_list"
+			],
+			[
+				"ty",
+				"try\tTry/Except"
+			],
+			[
+				"m",
+				"m_list"
+			],
+			[
+				"mont",
+				"month"
+			],
+			[
+				"def",
+				"def\tFunction"
+			],
+			[
+				"fetc",
+				"fetch_history_api\tmodule"
+			],
+			[
+				"range",
+				"range_2\tparam"
+			],
+			[
+				"Time",
+				"Timestamp"
+			],
+			[
+				"pong",
+				"pongWeb"
+			],
+			[
+				"start",
+				"start_end"
+			],
+			[
+				"yield",
+				"yield_partition"
+			],
+			[
+				"miss",
+				"missing_stamps\tstatement"
+			],
+			[
+				"TIme",
+				"Timedelta"
+			],
+			[
+				"J",
+				"JSONDecodeError"
+			],
+			[
+				"ret",
+				"return_missing_timestamps"
+			],
+			[
+				"reu",
+				"return\tkeyword"
+			],
+			[
+				"dtaa",
+				"database"
+			],
+			[
+				"yiel",
+				"yield_partition\tfunction"
+			],
+			[
+				"tz",
+				"tz_localize"
+			],
+			[
+				"Not",
+				"NotImplementedError\tclass"
+			],
+			[
+				"pair",
+				"pair_name\tstatement"
+			],
+			[
+				"clera",
+				"clear_database\tmodule"
+			],
+			[
+				"date",
+				"date_range\tstatement"
+			],
+			[
+				"Key",
+				"KeyError\tclass"
+			],
+			[
+				"Fie",
+				"FloatingPointError\tclass"
+			],
+			[
+				"is",
+				"is_alive\tstatement"
+			],
+			[
+				"thread",
+				"threading\tmodule"
+			],
+			[
+				"fet",
+				"fetch_missing_data_fill_database\tfunction"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"frm",
+				"frame"
+			],
+			[
+				"while",
+				"while\tkeyword"
+			],
+			[
+				"P",
+				"Parse_History_Candle_To_DataFrame\tfunction"
+			],
+			[
+				"send",
+				"send_json"
+			],
+			[
+				"In",
+				"INTERMED_ROUTER\tstatement"
+			],
+			[
+				"return",
+				"return_stamp_interval"
+			],
+			[
+				"de",
+				"defs\tMethod"
+			],
+			[
+				"on",
+				"on_message\tfunction"
+			],
+			[
+				"missing",
+				"missing_stamp\tparam"
+			],
+			[
+				"inter",
+				"interval_list\tstatement"
+			],
+			[
+				"missin",
+				"missing_stamp\tparam"
+			],
+			[
+				"missig",
+				"missing_stamp\tparam"
+			],
+			[
+				"parse",
+				"parse_to_integer\tfunction"
+			],
+			[
+				"Meta",
+				"MetaRouterNo\tstatement"
+			],
+			[
+				"Bina",
+				"BinaryRouterNo\tstatement"
+			],
+			[
+				"router",
+				"router_port\tstatement"
+			],
+			[
+				"proc",
+				"proc3\tstatement"
+			],
+			[
+				"pull",
+				"pull_socket\tstatement"
+			],
+			[
+				"Tre",
+				"True"
+			],
+			[
+				"req",
+				"req_response\tfunction"
+			],
+			[
+				"roue",
+				"router_port\tstatement"
+			],
+			[
+				"sub",
+				"sub_port_no\tstatement"
+			],
+			[
+				"Market",
+				"MarketPair"
+			],
+			[
+				"exce",
+				"except"
+			],
+			[
+				"databas",
+				"database_name\tstatement"
+			],
+			[
+				"marke",
+				"market_pair\tparam"
+			],
+			[
+				"_range",
+				"_range_1\tstatement"
+			],
+			[
+				"market",
+				"market_history"
+			],
+			[
+				"json",
+				"json_list\tparam"
+			],
+			[
+				"MARKE",
+				"MARKET_SUB_PORT\tstatement"
+			],
+			[
+				"value",
+				"value\tparam"
+			],
+			[
+				"Os",
+				"OSError\tclass"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"thre",
+				"thread4\tstatement"
+			],
+			[
+				"Un",
+				"Unmarshal"
+			],
+			[
+				"New",
+				"NewSocket"
+			],
+			[
+				"Router",
+				"RouterServer"
+			],
+			[
+				"con",
+				"conv_int"
+			],
+			[
+				"Inter",
+				"InterRouterNo"
+			],
+			[
+				"Inte",
+				"InterRouterNo"
+			],
+			[
+				"Binary",
+				"BinaryServer"
+			],
+			[
+				"Bin",
+				"BinaryAppId"
+			],
+			[
 				"Tick",
 				"TickStructure"
 			],
@@ -38,10 +342,6 @@
 			[
 				"Xp",
 				"XpubPortNo"
-			],
-			[
-				"New",
-				"NewSocket"
 			],
 			[
 				"Xpu",
@@ -108,16 +408,8 @@
 				"fill_up_missing_indexes"
 			],
 			[
-				"def",
-				"defs\tMethod"
-			],
-			[
 				"pa",
 				"pair_name"
-			],
-			[
-				"pair",
-				"pair_hst_file\tstatement"
 			],
 			[
 				"time",
@@ -140,14 +432,6 @@
 				"_PUB_SOCKET"
 			],
 			[
-				"Key",
-				"KeyboardInterrupt\tclass"
-			],
-			[
-				"exce",
-				"Exception\tclass"
-			],
-			[
 				"Mar",
 				"MarketParser\tclass"
 			],
@@ -168,16 +452,8 @@
 				"ioutil"
 			],
 			[
-				"on",
-				"on_error"
-			],
-			[
 				"f",
 				"from"
-			],
-			[
-				"json",
-				"json_new"
 			],
 			[
 				"jso",
@@ -220,16 +496,8 @@
 				"proc2"
 			],
 			[
-				"thre",
-				"thread1"
-			],
-			[
 				"pro",
 				"proc2"
-			],
-			[
-				"proc",
-				"proc1"
 			],
 			[
 				"mock",
@@ -244,276 +512,8 @@
 				"MockedMarketPair"
 			],
 			[
-				"Market",
-				"MarketParser"
-			],
-			[
-				"m",
-				"main"
-			],
-			[
 				"EUR",
 				"EURUSD"
-			],
-			[
-				"Data",
-				"DataFrame"
-			],
-			[
-				"Dat",
-				"DataFrameClient"
-			],
-			[
-				"pull",
-				"pull_socket"
-			],
-			[
-				"MARKE",
-				"MARKET_PUSH_PORTS"
-			],
-			[
-				"db",
-				"db_influx"
-			],
-			[
-				"market",
-				"market_pair"
-			],
-			[
-				"smt",
-				"smtp_connection"
-			],
-			[
-				"SER",
-				"SERVER_SUB_PORT"
-			],
-			[
-				"SERE",
-				"SERVER_PUSH_PORT"
-			],
-			[
-				"dt",
-				"date"
-			],
-			[
-				"parse",
-				"parsed_data"
-			],
-			[
-				"inde",
-				"index_last"
-			],
-			[
-				"ma",
-				"market"
-			],
-			[
-				"mark",
-				"market_condition"
-			],
-			[
-				"open",
-				"open_x"
-			],
-			[
-				"main",
-				"main_logic"
-			],
-			[
-				"par",
-				"parsed_data"
-			],
-			[
-				"yea",
-				"year_val"
-			],
-			[
-				"year",
-				"year"
-			],
-			[
-				"ran",
-				"range2"
-			],
-			[
-				"range",
-				"range1"
-			],
-			[
-				"index",
-				"index_last"
-			],
-			[
-				"_ran",
-				"_range_2"
-			],
-			[
-				"las",
-				"last_val"
-			],
-			[
-				"DataFra",
-				"DataFrameClient"
-			],
-			[
-				"push",
-				"push"
-			],
-			[
-				"df",
-				"df_tick"
-			],
-			[
-				"Maket",
-				"MarketParser"
-			],
-			[
-				"Infl",
-				"InfluxDBClientError"
-			],
-			[
-				"dat",
-				"database"
-			],
-			[
-				"if",
-				"ifmain\tif __name__ == '__main__'"
-			],
-			[
-				"va",
-				"validate_resampling"
-			],
-			[
-				"loop",
-				"loop_frame"
-			],
-			[
-				"rage",
-				"range_2"
-			],
-			[
-				"__",
-				"__init__"
-			],
-			[
-				"dum",
-				"dump_data"
-			],
-			[
-				"ra",
-				"range_2"
-			],
-			[
-				"dfH",
-				"dfH4"
-			],
-			[
-				"dfM",
-				"dfM15"
-			],
-			[
-				"dm",
-				"dfM15"
-			],
-			[
-				"thread",
-				"thread1"
-			],
-			[
-				"data",
-				"data_list"
-			],
-			[
-				"box",
-				"box-shadow\tproperty"
-			],
-			[
-				"backgr",
-				"background-color\tproperty"
-			],
-			[
-				"margin",
-				"margin-top\tproperty"
-			],
-			[
-				"border",
-				"border\tproperty"
-			],
-			[
-				"backg",
-				"background-color\tproperty"
-			],
-			[
-				"background",
-				"background-color\tproperty"
-			],
-			[
-				"padding",
-				"padding-left\tproperty"
-			],
-			[
-				"upd",
-				"update_nbr"
-			],
-			[
-				"story",
-				"story_id"
-			],
-			[
-				"paddin",
-				"padding-left\tproperty"
-			],
-			[
-				"back",
-				"background-color\tproperty"
-			],
-			[
-				"object",
-				"object-fit\tproperty"
-			],
-			[
-				"text",
-				"text-center"
-			],
-			[
-				"loading",
-				"loading-btn"
-			],
-			[
-				"im",
-				"important"
-			],
-			[
-				"n",
-				"inherit\toutline"
-			],
-			[
-				"c",
-				"cover\tobject-fit"
-			],
-			[
-				"obje",
-				"object-fit\tproperty"
-			],
-			[
-				"fa-angle",
-				"fa-angle-double-down"
-			],
-			[
-				"min",
-				"min-width\tproperty"
-			],
-			[
-				"padd",
-				"padding-top\tproperty"
-			],
-			[
-				"bac",
-				"background-color\tproperty"
-			],
-			[
-				"lt",
-				"lt_cond"
 			]
 		]
 	},
@@ -530,7 +530,15 @@
 		[
 			[
 				"Package Control: ",
-				"Package Control: Disable Package"
+				"Package Control: Install Package"
+			],
+			[
+				"subl",
+				"Sublack: Start Blackd Server"
+			],
+			[
+				"subla",
+				"Sublack: Format all"
 			],
 			[
 				"ins",
@@ -632,23 +640,46 @@
 	},
 	"file_history":
 	[
+		"/home/devcode/Desktop/keras-tensor/tradex/market/metatrader.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/remote.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/server/binary.go",
+		"/home/devcode/Desktop/keras-tensor/tradex/server/xpubsub.go",
+		"/home/devcode/Desktop/keras-tensor/tradex/server/binary_test.go",
+		"/home/devcode/Desktop/keras-tensor/tradex/server/inter_binary.go",
+		"/home/devcode/Desktop/keras-tensor/tradex/server/reusables.go",
+		"/home/devcode/Desktop/keras-tensor/tradex/engine/testo.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/parse_index.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/config.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/reuse.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/api.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/base.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/apx.pyx",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/apx.c",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/fetch_history_hst.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/clear_database.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/.env",
+		"/home/devcode/Desktop/keras-tensor/tradex/tests/mocked_classes.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/tests/test_market.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/tests/test_patterns.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/mock_server.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/fetch_history_api.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/setup.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/server/xpubsub_test.go",
+		"/home/devcode/Desktop/keras-tensor/tradex/README.md",
+		"/home/devcode/Desktop/keras-tensor/tradex/engine/__init__.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/engine/connector.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/server/metatrader.go",
+		"/home/devcode/Desktop/keras-tensor/tradex/tests/golang/server_test.go",
+		"/home/devcode/Desktop/keras-tensor/tradex/server/codex.ipc",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/params.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/patterns/doubleliner.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/requirements.txt",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/test/binary_test.go",
-		"/home/devcode/Desktop/keras-tensor/tradex/config.py",
-		"/home/devcode/Desktop/keras-tensor/tradex/market/api.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/xpubsub1.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/xpuxpubsub1.go",
-		"/home/devcode/Desktop/keras-tensor/tradex/server/xpubsub_test.go",
-		"/home/devcode/Desktop/keras-tensor/tradex/market/apx.pyx",
-		"/home/devcode/Desktop/keras-tensor/tradex/market/apx.c",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/cfg.pyx",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/kd.py",
-		"/home/devcode/Desktop/keras-tensor/tradex/tests/test_patterns.py",
-		"/home/devcode/Desktop/keras-tensor/tradex/tests/test_market.py",
-		"/home/devcode/Desktop/keras-tensor/tradex/engine/connector.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/engine/connector.go",
-		"/home/devcode/Desktop/keras-tensor/tradex/server/binary.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/binaryrep.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/main.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/server_test.go",
@@ -674,7 +705,6 @@
 		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/__init__.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/__init__.py",
 		"/home/devcode/Desktop/keras-tensor/gh.ss",
-		"/home/devcode/Desktop/keras-tensor/tradex/market/clear_database.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/axd.pyx",
 		"/home/devcode/Desktop/keras-tensor/xine_trade/patterns/multiliner.py",
 		"/home/devcode/Desktop/keras-tensor/darwin_x/tools/dwx_zeromq_connector/v2.0.1/EXAMPLES/TEMPLATE/STRATEGIES/BASE/DWZ_ZMQ_Strategy.py",
@@ -737,33 +767,11 @@
 		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/mixins/src/sass/app.scss",
 		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/range/src/sass/_mixins.scss",
 		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/parent/src/sass/app.scss",
-		"/home/devcode/Desktop/keras-tensor/keras/lib/python3.6/site-packages/zmq/sugar/socket.py",
-		"/home/devcode/Desktop/keras-tensor/zeromq/section_1(Prelim-SocketPatterns)/weather_client_network6.py",
-		"/home/devcode/Desktop/keras-tensor/zeromq/section_1(Prelim-SocketPatterns)/weather_update6.py",
-		"/home/devcode/Desktop/keras-tensor/zeromq/section_1(Prelim-SocketPatterns)/weather_one_way_server2.py",
-		"/home/devcode/Desktop/keras-tensor/zeromq/section_1(Prelim-SocketPatterns)/sink3.py",
-		"/home/devcode/Desktop/keras-tensor/zeromq/weather_client_network6.py",
-		"/home/devcode/Desktop/docs/font/css/all.css",
-		"/home/devcode/Desktop/docs/4.0/utilities/flex.md",
-		"/home/devcode/Desktop/docs/4.0/examples/cover/cover.css",
-		"/home/devcode/Desktop/docs/4.0/examples/navbars/navbar.css",
-		"/home/devcode/Desktop/pageant/pageant/beauty/templates/home.html",
-		"/home/devcode/Desktop/pyfinance/financ/AlgorithmicTrading/patterns/__init__.py",
-		"/home/devcode/Desktop/django-projects/scrape/opencv-tuts/image_gradients.py",
-		"/home/devcode/Desktop/django-projects/scrape/opencv-tuts/morph_transformations.py",
-		"/home/devcode/Desktop/django-projects/scrape/opencv-tuts/smoothin.py",
-		"/home/devcode/Desktop/material-react/project/index.html",
-		"/home/devcode/.cache/.fr-d29SDD/starter-template/index.html",
-		"/home/devcode/Downloads/starter-template/index.html",
-		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/site-packages/PIL/ImageFilter.py",
-		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/re.py",
-		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/encodings/punycode.py",
-		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/tarfile.py",
-		"/home/devcode/Desktop/django-projects/scrape/scrape/lib/python3.6/sre_parse.py"
+		"/home/devcode/Desktop/keras-tensor/keras/lib/python3.6/site-packages/zmq/sugar/socket.py"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -777,6 +785,15 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"pair_name",
+			"BinaryComApi",
+			"Binary",
+			"fetch",
+			"Binary",
+			"router_no",
+			"time_range",
+			"self._port",
+			"suffix",
 			"PUSH_PORTS",
 			"wss",
 			"binary_url"
@@ -787,6 +804,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Binary"
 		],
 		"reverse": false,
 		"show_context": false,
@@ -796,7 +814,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 33.0
+		"height": 41.0
 	},
 	"input":
 	{
@@ -848,7 +866,7 @@
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 62.0
+		"height": 114.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -889,7 +907,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 211.0,
+	"side_bar_width": 202.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

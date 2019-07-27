@@ -1,13 +1,14 @@
 import pytest
 from tradex.market.clear_database import main
-from tradex.market.parse_index import parse_hst
+from tradex.market.fetch_history_hst import parse_hst
 from mocked_classes import MockedMarketPair
 
 import pandas as pd
 import os
-from tradex.mock_server import publish
+from tradex.mock_server import publish, req_response
 from threading import Thread
-from tradex.market.api import MarketParser
+from tradex.market.metatrader import MarketParser
+import logging
 
 
 @pytest.fixture
@@ -23,32 +24,37 @@ def initials_exception():
 @pytest.fixture
 def mock_server(request):
 
-    main('USDCHF', True)
-    x = MockedMarketPair('USDCHF')
+    x = MockedMarketPair('EURUSD')
     proc = Thread(target=publish)
     proc1 = Thread(target=x.start)
     proc2 = Thread(target=x.logic_contained)
+    proc3 = Thread(target=req_response)
 
     proc.start()
+    proc3.start()
     proc1.start()
     proc2.start()
 
     proc.join()
+    proc3.join()
     proc1.join()
+    proc2.join()
+    # x.shutdown_sockets()
 
     def cleanup():
-        nonlocal proc, proc2, proc1
+        nonlocal proc, proc2, proc1, proc3
         print("tearing down context")
 
         del proc
         del proc1
         del proc2
-
-        main('USDCHF', True)
+        del proc3
 
         print(f'\n Finally closed... hoping for no Errors')
 
     request.addfinalizer(cleanup)
+
+    logging.info("Tearing down whole context")
 
     return x
 
@@ -69,12 +75,8 @@ def test_market_type_checks(initials_exception):
 
     rt_dict = initials_exception.__dict__
 
-    for x in rt_dict.items():
-        if x[0] in market_types:
-            assert type(x[1]) == market_types[x[0]]
-
     for frames in c:
-        assert frames == None
+        assert frames is not None
 
 
 #################  TESTING FOR TYPE ERRORS AND OTHER CHECKS ON parse_hst #######################
@@ -94,7 +96,4 @@ def test_assert_return_type():
 
     assert type(parse_hst('test.txt')) == pd.core.frame.DataFrame
     os.remove('test.txt')
-
-
-
 

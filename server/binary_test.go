@@ -8,20 +8,23 @@ import(
 	"strconv"
 	"time"
 	"encoding/json"
+	"os"
 )
 
 func Init() BinaryApi {
-	b := BinaryApi{
-		Dialer: websocket.Dialer{},
-		Header: http.Header{},
-		Url: "wss://ws.binaryws.com/websockets/v3?app_id=1089",
-		PubPortNo: 60000,
-		RouterPortNo: 40002,
+	binaryApi := BinaryApi{
+		Bs: BinaryServer{
+			Dialer: websocket.Dialer{},
+			Header: http.Header{},
+			Url: "wss://ws.binaryws.com/websockets/v3?app_id="+os.Getenv("BinaryAppId"),
+			RouterPortNo: conv_int("BinaryRouter"),
+		},
+		PubPortNo: conv_int("XsubPortNo"),
 	}
-	return b
+	return binaryApi
 }
 
-func (b BinaryApi) setup(ch chan string) {
+func (b BinaryServer) setup(ch chan string) {
 
 	c,_ := zmq.NewContext()
 	req, _ := c.NewSocket(zmq.REQ)
@@ -43,12 +46,12 @@ func (b BinaryApi) setup(ch chan string) {
 }
 
 func TestBinaryInitialization(t *testing.T) {
-	b := Init()
+	b := Init().Bs
 	ws,_, _ := b.Dialer.Dial(b.Url,b.Header)
 
 	c := make(chan string)
 	go b.setup(c)
-	go b.StartPollServeToApi(c,ws)
+	go InitRouterServer(b,b.RouterPortNo,c,ws)
 
 	if <-c == "kill"{
 		log.Println("Test passed......")
@@ -57,7 +60,7 @@ func TestBinaryInitialization(t *testing.T) {
 
 func TestWebsocketReturnsSuccess(t *testing.T){
 	b := Init()
-	_,err := b.InitializeWebsocket()
+	_,err := b.Bs.InitializeWebsocket()
 	if err != nil{
 		t.Errorf("Websocket Test returned an error.....might be wrong ping/something")
 	}
@@ -66,7 +69,7 @@ func TestWebsocketReturnsSuccess(t *testing.T){
 func TestTickDataReceived(t *testing.T){
 	b := Init()
 
-	ws,_ := b.InitializeWebsocket()
+	ws,_ := b.Bs.InitializeWebsocket()
 
 	log.Println("Starting the test.....")
 
@@ -84,6 +87,5 @@ func TestTickDataReceived(t *testing.T){
 		t.Errorf("Sent data not received..... checking now..")
 	}
 }
-
 
 

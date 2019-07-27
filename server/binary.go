@@ -17,24 +17,22 @@ var flag zmq.Flag = 0
 const prefix = "frx"
 
 type BinaryApi struct{
-	Dialer websocket.Dialer
-	Header http.Header
-	Url string
-	PubPortNo,RouterPortNo int
+	Bs BinaryServer
+	PubPortNo int
 }
 
 func main() {
 
-	binaryApi := BinaryApi{
-		Dialer: websocket.Dialer{},
-		Header: http.Header{},
-		Url: "wss://ws.binaryws.com/websockets/v3?app_id="+os.Getenv("BinaryAppId"),
+	binary := BinaryApi{
+		Bs: BinaryServer{
+			Dialer: websocket.Dialer{},
+			Header: http.Header{},
+			Url: "wss://ws.binaryws.com/websockets/v3?app_id="+os.Getenv("BinaryAppId"),
+			RouterPortNo: conv_int("BinaryRouter"),
+		},
 		PubPortNo: conv_int("XsubPortNo"),
-		RouterPortNo: conv_int("RouterPortNo"),
 	}
-
-	fmt.Println(os.Getenv("BinaryAppId"))
-
+	binaryApi := binary.Bs
 	ws, err := binaryApi.InitializeWebsocket()
 	if err != nil{
 		log.Fatal("Error opening connection to websocket..", err)
@@ -43,17 +41,35 @@ func main() {
 
 	c := make(chan string)
 
-	// go binaryApi.RouterServeToApi(c,ws)
-	// initialize pub here...
-	// log.Println("Success : started all routines successfully...")
+	go binary.StartPubServer(c,ws)
+	go InitRouterServer(binaryApi,binaryApi.RouterPortNo,c,ws)
 
-	go binaryApi.StartPubServer(c,ws)
 
-	// Blocks main stream routine till a kill message s received from channel
 	if <- c == "kill"{
 		log.Fatal("Kill message received.... closing websocket and main routine")
 	}
+}
 
+func (b BinaryApi) StartPubServer(ch chan string, ws *websocket.Conn) {
+	c,_ := zmq.NewContext()
+	p,_ := c.NewSocket(zmq.PUB)
+	p.Connect("tcp://localhost:"+strconv.Itoa(b.PubPortNo))
+	p.SetIdentity("pub1")
+
+	defer p.Close()
+	defer c.Term()
+	
+	for{
+		_,msg,_ := ws.ReadMessage()
+		tick := TickStructure{}
+		json.Unmarshal(msg,&tick)
+
+		s,b,a,e := tick.TickData.Symbol,
+		           tick.TickData.Bid,
+		           tick.TickData.Ask,
+		           tick.TickData.Epoch
+		p.Send(format(s,b,a,e),0)
+	}
 }
 
 func format(s string,b float64,a float64,e float64) string {
@@ -65,85 +81,21 @@ func format(s string,b float64,a float64,e float64) string {
 	return _new
 }
 
-func (b BinaryApi) StartPubServer(ch chan string, ws *websocket.Conn) {
-	c,_ := zmq.NewContext()
-	p,_ := c.NewSocket(zmq.PUB)
-	p.Connect("tcp://localhost:"+strconv.Itoa(b.PubPortNo))
-	p.SetIdentity("pub1")
-
-	defer p.Close()
-	defer c.Term()
-
-	seed := Subscribe{
-		Ticks:"R_50",
-		Sub: 1,
-	}
-
-	byte_slice,_ := json.Marshal(seed)
-	ws.WriteMessage(1,byte_slice)
-	for i := 0; i < 10; i++ {
-		_,msg,_ := ws.ReadMessage()
-		tick := TickStructure{}
-		json.Unmarshal(msg,&tick)
-		s,b,a,e := tick.TickData.Symbol,
-		tick.TickData.Bid,
-		tick.TickData.Ask,
-		tick.TickData.Epoch
-		p.Send(format(s,b,a,e),0)
-	}
-	
-	ch <- "kill"
-}
-
-
-func (b BinaryApi) StartRouterServeToApi(ch chan string,ws *websocket.Conn) {
-
-	c,_ := zmq.NewContext()
-	r,_ := c.NewSocket(zmq.ROUTER)
-	r.Bind("tcp://*:"+strconv.Itoa(b.RouterPortNo))
-
-	defer r.Unbind(("tcp://*:"+strconv.Itoa(b.RouterPortNo)))
-	defer r.Close()
+func (m BinaryServer) ForLogic(
+	ws *websocket.Conn,sock *zmq.Socket){
 
 	for{
 		log.Println("Receiving on router socket")
-		msg, _ := r.RecvMessage(0)
+		msg, _ := sock.RecvMessage(0)
+		tick := Subscribe{Sub:1}
 		if msg[2] != ""{
 			fmt.Println("message on router end",msg)
-			r.SendMessage([]string{msg[0],"","ok"})
+			*&tick.Ticks = msg[2]
+			jso,_ := json.Marshal(tick)
+			ws.WriteMessage(1,jso)
+			sock.SendMessage([]string{msg[0],"","ok"})
+			log.Println(msg[2])
 		}
 	}
 	fmt.Println("Closing go routine")
 }
-
-func (b BinaryApi) InitializeWebsocket()(*websocket.Conn, error) {
-	ws,_, err := b.Dialer.Dial(
-		b.Url,
-		b.Header,
-	)
-	if err != nil{
-		log.Println("Error opening websocket connection to server: ",err)
-		return nil, err
-	}
-
-	log.Println("Success : opened websocket connection")
-
-	pinger := ping{
-		Ping: 1,
-	}
-	BinaryResponse := PingResponse{}
-
-	realo, _ := json.Marshal(pinger)
-	ws.WriteMessage(1,realo)
-	_,msg,_ := ws.ReadMessage()
-	json.Unmarshal(msg,&BinaryResponse)
-
-	if BinaryResponse.Ping == "pong"{
-		log.Println("Success : pinged server")
-	}
-
-	return ws, nil
-}
-
-
-

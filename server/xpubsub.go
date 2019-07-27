@@ -25,9 +25,6 @@ func main() {
 	}
 }
 
-
-
-
 func (inter XPubXSubInterMediary) Start(ch chan string){
 	log.Println("Starting xpub/xsub socket.....")
 	ctx, _ := zmq.NewContext()
@@ -64,8 +61,3 @@ func (inter XPubXSubInterMediary) Start(ch chan string){
 	    }
 	}
 }
-
-
-
-
-
