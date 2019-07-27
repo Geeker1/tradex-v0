@@ -1,12 +1,24 @@
 import zmq
 import json
 import pandas as pd
-from tradex.market.remote import Binary
-from tradex.market.clear_database import main
+# from tradex.market.clear_database import main
 from influxdb.exceptions import InfluxDBClientError
 from tradex.config import INTERMED_ROUTER
 import influxdb as db
 import numpy as np
+
+
+def populate_history_schema(start, end, market, style):
+
+    market_history = {
+        "ticks_history": market,
+        "end": f"{end}",
+        "start": start,
+        "style": style,
+        "adjust_start_time": 1
+    }
+
+    return market_history
 
 
 def Parse_History_Candle_To_DataFrame(json_list):
@@ -78,7 +90,7 @@ def fetch_missing_data_fill_database(
 
     def return_val(*args):
         nonlocal req, empty
-        get_dict = Binary.populate_history_schema(*args, 'candles')
+        get_dict = populate_history_schema(*args, 'candles')
         req.send_json(get_dict)
         try:
             msg = req.recv_json()
@@ -104,6 +116,7 @@ def fetch_missing_data_fill_database(
     # CONDITION 3
     # I set it here to run before CONDITION 1/2
     if (start and end) is not None:
+        print("fetching from range values in binary api")
         gen = yield_partition(start, end)
         loop_and_fetch(gen)
         return empty

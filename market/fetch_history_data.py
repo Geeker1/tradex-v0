@@ -10,27 +10,9 @@ base_url = 'https://www.histdata.com/download-free-forex-historical-data\
 
 start_url = 'https://www.histdata.com'
 
-session = requests.Session()
 
-headers = {
-    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) \
-    AppleWebKit/537.36 (KHTML, like Gecko) \
-    Chrome/72.0.3626.121 Safari/537.36',
-    # 'Content-Type': 'application/x-www-form-urlencoded',
-    'Upgrade-Insecure-Requests': '1',
-    'Host': 'www.histdata.com',
-    'Origin': 'https://www.histdata.com',
-}
-
-session.headers.update(headers)
-
-
-init = session.get(start_url, headers=headers)
-init.raise_for_status()
-
-
-def get_and_post_data(url):
-    print("fetching from",url)
+def get_and_post_data(session, url):
+    print("fetching from", url)
     path = session.get(url)
     path.raise_for_status()
     source = BeautifulSoup(path.text, 'html5lib')
@@ -85,12 +67,12 @@ def parse_archive(path):
         # Read Csv file and parse it into dataframe
         frame = pd.read_csv(
             file,
-            names=['date','hm','open','high','low','close','volume']
+            names=['date', 'hm', 'open', 'high', 'low', 'close', 'volume']
         )
         frame['time'] = frame['date'] + ' ' + frame['hm']
         frame.index = pd.to_datetime(frame['time'])
         frame.index = frame.index.tz_localize('UTC')
-        frame.drop(columns=['date','hm','time'],inplace=True)
+        frame.drop(columns=['date', 'hm', 'time'], inplace=True)
 
     except FileNotFoundError as f:
         raise f
@@ -101,14 +83,14 @@ def parse_archive(path):
     finally:
         os.unlink(file)
 
-    return frame[['open','high','low','close']]
+    return frame[['open', 'high', 'low', 'close']]
 
 
-def build_url_list(pair,year,m_list):
+def build_url_list(pair, year, m_list):
     post_urls = []
     for month in m_list:
         path = f'{pair}/{year}/{month}'
-        post_urls.append(os.path.join(base_url,path))
+        post_urls.append(os.path.join(base_url, path))
     return post_urls
 
 
@@ -116,30 +98,45 @@ def fetch_hist_data(pair, year, months=None, full=False):
 
     pair = pair.lower()
     frame = pd.DataFrame()
-    
+
+    session = requests.Session()
+
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) \
+    AppleWebKit/537.36 (KHTML, like Gecko) \
+    Chrome/72.0.3626.121 Safari/537.36',
+        # 'Content-Type': 'application/x-www-form-urlencoded',
+        'Upgrade-Insecure-Requests': '1',
+        'Host': 'www.histdata.com',
+        'Origin': 'https://www.histdata.com',
+    }
+
+    session.headers.update(headers)
+
+    init = session.get(start_url, headers=headers)
+    init.raise_for_status()
+
     if full:
         if year >= pd.Timestamp.utcnow().year:
             raise NotImplementedError(
                 "Year is incorrect, should not be same with \
                 current year or greater than current year"
             )
-        path = os.path.join(base_url,f'{pair}/{year}')
-        filename = get_and_post_data(path)
+        path = os.path.join(base_url, f'{pair}/{year}')
+        filename = get_and_post_data(session, path)
         frame2 = parse_archive(filename)
         frame = frame.append(frame2)
-        print(frame[-20:],len(frame))
+        print(frame[-20:], len(frame))
         return frame
 
-    fetch_list = build_url_list(pair,year,months)
+    fetch_list = build_url_list(pair, year, months)
     for url in fetch_list:
-        filename = get_and_post_data(url)
+        filename = get_and_post_data(session, url)
         frame2 = parse_archive(filename)
         frame = frame.append(frame2)
-    
+
     return frame
 
 
-
 if __name__ == '__main__':
-    fetch_hist_data('EURUSD',2019,full=True)
-
+    fetch_hist_data('EURUSD', 2019, full=True)

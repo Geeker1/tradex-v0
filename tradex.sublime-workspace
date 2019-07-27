@@ -4,12 +4,108 @@
 		"selected_items":
 		[
 			[
-				"Content",
-				"Content-Type"
+				"init",
+				"initials\tfunction"
+			],
+			[
+				"time",
+				"time_range"
+			],
+			[
+				"dta",
+				"database_name"
+			],
+			[
+				"Ma",
+				"MarketPair"
+			],
+			[
+				"fet",
+				"fetch_history_data\tmodule"
+			],
+			[
+				"fetc",
+				"fetch_history_api\tmodule"
+			],
+			[
+				"Market",
+				"MarketParser"
+			],
+			[
+				"market",
+				"MarketParser\tclass"
+			],
+			[
+				"router",
+				"router_port\tparam"
+			],
+			[
+				"def",
+				"defs\tMethod"
+			],
+			[
+				"MarketPa",
+				"MarketPair"
+			],
+			[
+				"data",
+				"database_name"
+			],
+			[
+				"repla",
+				"replace"
+			],
+			[
+				"get",
+				"get_history_metatrader\tfunction"
+			],
+			[
+				"Data",
+				"DataFrame\tclass"
 			],
 			[
 				"frame",
-				"frame2"
+				"frame\tstatement"
+			],
+			[
+				"fram",
+				"frame2\tstatement"
+			],
+			[
+				"par",
+				"parse_archive\tfunction"
+			],
+			[
+				"filen",
+				"filename"
+			],
+			[
+				"pos",
+				"post_urls\tstatement"
+			],
+			[
+				"re",
+				"return\tkeyword"
+			],
+			[
+				"F",
+				"False\tkeyword"
+			],
+			[
+				"hea",
+				"headers\tstatement"
+			],
+			[
+				"sess",
+				"session\tstatement"
+			],
+			[
+				"save",
+				"save-only"
+			],
+			[
+				"Content",
+				"Content-Type"
 			],
 			[
 				"frma",
@@ -18,10 +114,6 @@
 			[
 				"in",
 				"input_list"
-			],
-			[
-				"get",
-				"get_and_post_data"
 			],
 			[
 				"fetch",
@@ -38,14 +130,6 @@
 			[
 				"mont",
 				"month"
-			],
-			[
-				"def",
-				"def\tFunction"
-			],
-			[
-				"fetc",
-				"fetch_history_api\tmodule"
 			],
 			[
 				"range",
@@ -132,10 +216,6 @@
 				"threading\tmodule"
 			],
 			[
-				"fet",
-				"fetch_missing_data_fill_database\tfunction"
-			],
-			[
 				"if",
 				"ifmain\tif __name__ == '__main__'"
 			],
@@ -200,10 +280,6 @@
 				"BinaryRouterNo\tstatement"
 			],
 			[
-				"router",
-				"router_port\tstatement"
-			],
-			[
 				"proc",
 				"proc3\tstatement"
 			],
@@ -228,10 +304,6 @@
 				"sub_port_no\tstatement"
 			],
 			[
-				"Market",
-				"MarketPair"
-			],
-			[
 				"exce",
 				"except"
 			],
@@ -246,10 +318,6 @@
 			[
 				"_range",
 				"_range_1\tstatement"
-			],
-			[
-				"market",
-				"market_history"
 			],
 			[
 				"json",
@@ -388,10 +456,6 @@
 				"InitializeWebsocket"
 			],
 			[
-				"re",
-				"return"
-			],
-			[
 				"fuc",
 				"function"
 			],
@@ -410,10 +474,6 @@
 			[
 				"pa",
 				"pair_name"
-			],
-			[
-				"time",
-				"time_to_string\tstatement"
 			],
 			[
 				"IN",
@@ -454,66 +514,6 @@
 			[
 				"f",
 				"from"
-			],
-			[
-				"jso",
-				"json_new"
-			],
-			[
-				"webs",
-				"websocket"
-			],
-			[
-				"resa",
-				"resample_frame"
-			],
-			[
-				"resampl",
-				"resample_frame"
-			],
-			[
-				"resamp",
-				"resample_frame"
-			],
-			[
-				"res",
-				"resample_frame"
-			],
-			[
-				"resam",
-				"resample"
-			],
-			[
-				"st",
-				"setup_base_pattern"
-			],
-			[
-				"Conte",
-				"ContextTerminated"
-			],
-			[
-				"pr",
-				"proc2"
-			],
-			[
-				"pro",
-				"proc2"
-			],
-			[
-				"mock",
-				"mock_server"
-			],
-			[
-				"por",
-				"proc2"
-			],
-			[
-				"M",
-				"MockedMarketPair"
-			],
-			[
-				"EUR",
-				"EURUSD"
 			]
 		]
 	},
@@ -530,7 +530,7 @@
 		[
 			[
 				"Package Control: ",
-				"Package Control: Install Package"
+				"Package Control: Enable Package"
 			],
 			[
 				"subl",
@@ -640,6 +640,9 @@
 	},
 	"file_history":
 	[
+		"/home/devcode/.config/sublime-text-3/Packages/anaconda_go/Anaconda_GO.sublime-settings",
+		"/home/devcode/.config/sublime-text-3/Packages/User/golang.sublime-settings",
+		"/home/devcode/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/metatrader.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/remote.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/binary.go",
@@ -764,14 +767,11 @@
 		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/bem/public/app.css",
 		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/extend/src/sass/app.scss",
 		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/mixins/src/sass/_mixins.scss",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/mixins/src/sass/app.scss",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/range/src/sass/_mixins.scss",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/parent/src/sass/app.scss",
-		"/home/devcode/Desktop/keras-tensor/keras/lib/python3.6/site-packages/zmq/sugar/socket.py"
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/mixins/src/sass/app.scss"
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 71.0
 	},
 	"find_in_files":
 	{

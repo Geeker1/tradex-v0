@@ -1,21 +1,21 @@
 package main
 
-import(
+import (
+	"encoding/json"
+	"log"
+	"net/http"
 	"os"
 	"strconv"
+
 	"github.com/gorilla/websocket"
-	"log"
-	"encoding/json"
-	"net/http"
 	zmq "github.com/pebbe/zmq4"
 	// "fmt"
 )
 
-type pio struct{
+type pio struct {
 	Name string `json:"name"`
-	No int `json:"no"`
+	No   int    `json:"no"`
 }
-
 
 // func main() {
 // 	log.Println("Creating context and sockets")
@@ -32,95 +32,86 @@ type pio struct{
 // 	}
 // }
 
-
-
-
-
-
 // Defining binary api structs
-type ping struct{
+type ping struct {
 	Ping int `json:"ping"`
 }
 
-type PingResponse struct{
-	Echo ping `json:"echo_req"`
+type PingResponse struct {
+	Echo    ping   `json:"echo_req"`
 	MsgType string `json:"msg_type"`
-	Ping string `json:"ping"`
+	Ping    string `json:"ping"`
 }
 
-type Subscribe struct{
+type Subscribe struct {
 	Ticks string `json:"ticks"`
-	Sub int `json:"subscribe"`
+	Sub   int    `json:"subscribe"`
 }
 
-type SubId struct{
+type SubId struct {
 	Id string `json:"id"`
 }
 
-type Tick struct{
-	Ask float64 `json:"ask"`
-	Bid float64 `json:"bid"`
-	Epoch float64 `json:"epoch"`
-	Id string `json:"id"`
-	Quote float64 `json:"quote"`
-	Symbol string `json:"symbol"`
+type Tick struct {
+	Ask    float64 `json:"ask"`
+	Bid    float64 `json:"bid"`
+	Epoch  float64 `json:"epoch"`
+	Id     string  `json:"id"`
+	Quote  float64 `json:"quote"`
+	Symbol string  `json:"symbol"`
 }
 
-type TickStructure struct{
-	Echo Subscribe `json:"echo_req"`
-	MsgType string `json:"msg_type"`
-	SubId string `json:"subscription"`
-	TickData Tick `json:"tick"` 
+type TickStructure struct {
+	Echo     Subscribe `json:"echo_req"`
+	MsgType  string    `json:"msg_type"`
+	SubId    string    `json:"subscription"`
+	TickData Tick      `json:"tick"`
 }
-
 
 func conv_int(value string) int {
-	val,err := strconv.Atoi(os.Getenv(value))
-	if err != nil{
+	val, err := strconv.Atoi(os.Getenv(value))
+	if err != nil {
 		log.Fatal("Could not parse Env variable.....")
 	}
 	return val
 }
 
-
 // Below is the interface logic used to wrap the two binary servers on binary.com Api
 
-type BinaryServer struct{
-	Dialer websocket.Dialer
-	Header http.Header
-	Url string
+type BinaryServer struct {
+	Dialer       websocket.Dialer
+	Header       http.Header
+	Url          string
 	RouterPortNo int
 }
 
-
 // Any type that implements this function automatically uses this interface.....
-type RouterServer interface{
-	ForLogic(*websocket.Conn,*zmq.Socket)
+type RouterServer interface {
+	ForLogic(*websocket.Conn, *zmq.Socket)
 }
 
 // To initiate Main Router Server then pass the forloop logic...
-func InitRouterServer(v RouterServer,p int,ch chan string,ws *websocket.Conn){ 
-	c,_ := zmq.NewContext()
-	r,_ := c.NewSocket(zmq.ROUTER)
-	r.Bind("tcp://*:"+strconv.Itoa(p))
+func InitRouterServer(v RouterServer, p int, ch chan string, ws *websocket.Conn) {
+	c, _ := zmq.NewContext()
+	r, _ := c.NewSocket(zmq.ROUTER)
+	r.Bind("tcp://*:" + strconv.Itoa(p))
 
-	defer r.Unbind(("tcp://*:"+strconv.Itoa(p)))
+	defer r.Unbind(("tcp://*:" + strconv.Itoa(p)))
 	defer r.Close()
 
-	v.ForLogic(ws,r)
+	v.ForLogic(ws, r)
 
 	ch <- "kill"
 }
 
-
 // Initialize Websocket and ping to server..., then exits
-func (b BinaryServer) InitializeWebsocket()(*websocket.Conn, error) {
-	ws,_, err := b.Dialer.Dial(
+func (b BinaryServer) InitializeWebsocket() (*websocket.Conn, error) {
+	ws, _, err := b.Dialer.Dial(
 		b.Url,
 		b.Header,
 	)
-	if err != nil{
-		log.Println("Error Dialing websocket server: ",err)
+	if err != nil {
+		log.Println("Error Dialing websocket server: ", err)
 		return nil, err
 	}
 
@@ -132,15 +123,13 @@ func (b BinaryServer) InitializeWebsocket()(*websocket.Conn, error) {
 	BinaryResponse := PingResponse{}
 
 	realo, _ := json.Marshal(pinger)
-	ws.WriteMessage(1,realo)
-	_,msg,_ := ws.ReadMessage()
-	json.Unmarshal(msg,&BinaryResponse)
+	ws.WriteMessage(1, realo)
+	_, msg, _ := ws.ReadMessage()
+	json.Unmarshal(msg, &BinaryResponse)
 
-	if BinaryResponse.Ping == "pong"{
+	if BinaryResponse.Ping == "pong" {
 		log.Println("Success : pinged server")
 	}
 
 	return ws, nil
 }
-
-

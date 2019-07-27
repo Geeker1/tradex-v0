@@ -2,16 +2,16 @@ package main
 
 import "fmt"
 
-type MetaTraderConnector struct{
+type MetaTraderConnector struct {
 	CLIENT_ID string
-	host string
-	protocol string
+	host      string
+	protocol  string
 	PUSH_PORT int
 	PULL_PORT int
-	SUB_PORT int
+	SUB_PORT  int
 	delimiter string
-	verbose bool
-	URL string
+	verbose   bool
+	URL       string
 }
 
 func main() {
@@ -26,7 +26,6 @@ func main() {
 // func (m *MetaTraderConnector) INITIALS(){
 
 // }
-
 
 // func (m *MetaTraderConnector) SUBSCRIBE_MARKETDATA(symbol string, delimiter string){
 
@@ -43,5 +42,3 @@ func main() {
 // func (m *MetaTraderConnector) DMX_POLL_DATA(){
 
 // }
-
-
