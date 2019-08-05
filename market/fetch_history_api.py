@@ -49,7 +49,6 @@ def fetch_history_from_api(identity, data=None, port=INTERMED_ROUTER):
 
     try:
         msg = req.recv_json()
-        print(msg)
     except json.JSONDecodeError:
         req.close()
         ctx.term()

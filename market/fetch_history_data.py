@@ -130,10 +130,13 @@ def fetch_hist_data(pair, year, months=None, full=False):
         return frame
 
     fetch_list = build_url_list(pair, year, months)
-    for url in fetch_list:
-        filename = get_and_post_data(session, url)
-        frame2 = parse_archive(filename)
-        frame = frame.append(frame2)
+    try:
+        for url in fetch_list:
+            filename = get_and_post_data(session, url)
+            frame2 = parse_archive(filename)
+            frame = frame.append(frame2)
+    except Exception:
+        raise Exception
 
     return frame
 

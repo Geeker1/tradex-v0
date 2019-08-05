@@ -42,17 +42,37 @@ class MarketParser(MarketPair):
         self.client = db.DataFrameClient(
             host='localhost', port=8086, database=self.database_name)
 
-    def init(self):
-        try:
-            self.M1 = self.initials()[-10000:]
-            self.M1 = super().fill_missing_indexes_values(self.M1)
-            self.M5 = super().resample_frame('5T', self.M1)
-            self.M15 = super().resample_frame('15T', self.M1)
-            self.H1 = super().resample_frame('1H', self.M1)
-            self.H4 = super().resample_frame('4H', self.M1)
-            self.D1 = super().resample_frame('1D', self.M1)
-        except TypeError:
-            print("None received..... class does not need to run....")
+    def fill_and_return_resampled_data(self, frame):
+        m1 = super().fill_missing_indexes_values(frame)
+        m5 = super().resample_frame('5T', m1)
+        m15 = super().resample_frame('15T', m5)
+        h1 = super().resample_frame('1H', m15)
+        h4 = super().resample_frame('4H', h1)
+
+        for x in [m1, m5, m15, h1, h4]:
+            x.fillna(0, inplace=True)
+
+        r = dict(M1=m1, M5=m5, M15=m15, H1=h1, H4=h4)
+
+        return r
+
+    def init(self, frame, modify=False):
+        r = self.fill_and_return_resampled_data(frame)
+
+        def loc(self):
+            for key, value in r.items():
+                self.client.write_points(
+                    value,
+                    key,
+                    protocol='json'
+                )
+        if modify:
+            loc(self)
+            return
+        self.client.create_database(
+            f'{self.database_name}'
+        )
+        loc(self)
 
     def fetch_history_parse(self, year_val=None, range_1=None, range_2=None):
         """
@@ -76,18 +96,8 @@ class MarketParser(MarketPair):
 
         try:
             _M1 = self.client.query(
-                f'select * from {self.database_name}'
-            )[f'{self.database_name}']
-
-            # DONT REMOVE THIS BLOCK NO MATTER HOW SMART YOU ARE....
-            # weekends = ['Friday', 'Saturday', 'Sunday']
-            # if _now.day_name() in weekends:
-            #     print(
-            #         "Weekend has arrived can't run your class anymore...")
-            #     self.shutdown_sockets()
-            #     return None
-
-            # YOUR ORIGINAL DATABASE GETS REPLACED IF REMOVED....
+                f'select * from M1'
+            )[f'M1']
 
             _loop_frame = fetch_missing_data_fill_database(
                 self.database_name,
@@ -95,12 +105,7 @@ class MarketParser(MarketPair):
                 end=int(_now.timestamp())
             )
 
-            self.client.write_points(
-                _loop_frame, f'{self.database_name}', protocol='json')
-
-            _M1 = _M1.append(_loop_frame).sort_index(axis=0)
-
-            return _M1[['open', 'high', 'low', 'close']]
+            self.init(_loop_frame, True)
 
         except InfluxDBClientError:
 
@@ -115,23 +120,17 @@ class MarketParser(MarketPair):
             init = pd.DataFrame()
 
             func_list = [
-                self.get_history_histdata,
                 self.get_history_binary_api,
+                self.get_history_histdata,
                 self.get_history_metatrader
             ]
 
             for function in func_list:
-                try:
-                    frame = function()
-                    if frame is not None:
-                        init = init.append(frame)
-                        self.client.create_database(
-                            f'{self.database_name}')
-                        self.client.write_points(
-                            init, f'{self.database_name}', protocol='json')
-                        return init
-                except Exception:
-                    pass
+                frame = function()
+                if frame is not None:
+                    init = init.append(frame)
+                    self.init(init)
+                    break
 
             if len(init) == 0:
                 raise Exception(
@@ -139,9 +138,9 @@ class MarketParser(MarketPair):
                 )
 
         except KeyError:
-            self.shutdown_sockets()
-            self.client.drop_database(self.database_name)
-            return self.initials()
+            # self.shutdown_sockets()
+            # self.client.drop_database(self.database_name)
+            # return self.initials()
             raise KeyError(
                 "Database was not correctly implemented....,\
                 maybe you created database and didn't write to it,\
@@ -152,9 +151,12 @@ class MarketParser(MarketPair):
             self.shutdown_sockets()
             raise Exception
 
+        finally:
+            print("Done....")
+
     def get_history_metatrader(self):
         now = pd.Timestamp.utcnow()
-        prev = now - pd.Timedelta(weeks=12)
+        prev = now - pd.Timedelta(weeks=7)
         now, prev = int(now.timestamp()), int(prev.timestamp())
         try:
             frame = self.fetch_history_parse(range_1=prev, range_2=now)
@@ -164,7 +166,7 @@ class MarketParser(MarketPair):
 
     def get_history_binary_api(self):
         now = pd.Timestamp.utcnow()
-        prev = now - pd.Timedelta(weeks=12)
+        prev = now - pd.Timedelta(weeks=7)
         now, prev = int(now.timestamp()), int(prev.timestamp())
 
         try:
@@ -176,7 +178,7 @@ class MarketParser(MarketPair):
 
     def get_history_histdata(self):
         now = pd.Timestamp.utcnow()
-        prev = now - pd.Timedelta(weeks=12)
+        prev = now - pd.Timedelta(weeks=7)
         date_range = pd.date_range(start=prev, end=now, freq='1T')
         months = []
 

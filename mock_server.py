@@ -11,6 +11,29 @@ from threading import Thread
 import logging
 
 
+def pub_strat(port=45600):
+    context = zmq.Context()
+    publish = context.socket(zmq.PUB)
+    publish.bind(f'tcp://*:{port}')
+
+    now = datetime.now()
+    term = now + timedelta(minutes=1, seconds=10)
+
+    while datetime.now() < term:
+
+        try:
+            time.sleep(10)
+            publish.send_string("EURUSD")
+            print('Sent.....')
+        except KeyboardInterrupt:
+            publish.close()
+            context.term()
+
+    publish.send_string("EURUSD kill")
+    publish.close()
+    context.term()
+
+
 def publish(port=MOCK_SUB_PORT):
 
     context = zmq.Context()
@@ -28,7 +51,7 @@ def publish(port=MOCK_SUB_PORT):
                 f'EURUSD 1.9023;1.9879;{time_int}'
             )
             print('Moving on.....')
-            time.sleep(1)
+            time.sleep(30)
         except KeyboardInterrupt:
             publish.close()
             context.term()
