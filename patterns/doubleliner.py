@@ -1,5 +1,5 @@
 from patterns.base import BasePattern
-
+import numpy as np
 # import numpy as np
 
 
@@ -67,29 +67,29 @@ class TwoLinePattern(BasePattern):
             else:
                 self.truth.append(0)
 
-        return self.truth
+        return np.array(self.truth)
 
 
 class Harami(TwoLinePattern):
     def confirm_bull_pattern(self, *args):
-        lt_open, lt_high, lt_low, lt_close = args[0]
+        lt_open, _, _, lt_close = args[0]
         rt_open, rt_high, rt_low, rt_close = args[1]
 
         if (
-            (lt_open > rt_high or lt_open > rt_close) and
-            (lt_close < rt_low or lt_close > rt_open)
+            (lt_open > rt_high and lt_open > rt_close) and
+            (lt_close < rt_low and lt_close < rt_open)
         ):
             return 1
 
         return 0
 
     def confirm_bear_pattern(self, *args):
-        lt_open, lt_high, lt_low, lt_close = args[0]
+        lt_open, _, _, lt_close = args[0]
         rt_open, rt_high, rt_low, rt_close = args[1]
 
         if (
-            (lt_close > rt_open or lt_close > rt_low) and
-            (lt_open < rt_close or lt_open < rt_high)
+            (lt_close > rt_open and lt_close > rt_high) and
+            (lt_open < rt_close and lt_open < rt_low)
         ):
             return -1
 
@@ -98,8 +98,8 @@ class Harami(TwoLinePattern):
 
 class HaramiCross(TwoLinePattern):
     def confirm_bull_pattern(self, *args):
-        lt_open, lt_high, lt_low, lt_close = args[0]
-        rt_open, rt_high, rt_low, rt_close = args[1]
+        lt_open, _, _, lt_close = args[0]
+        _, rt_high, rt_low, _ = args[1]
 
         if (lt_open > rt_high) and (lt_close < rt_low):
             return 1
@@ -107,10 +107,10 @@ class HaramiCross(TwoLinePattern):
         return 0
 
     def confirm_bear_pattern(self, *args):
-        lt_open, lt_high, lt_low, lt_close = args[0]
-        rt_open, rt_high, rt_low, rt_close = args[1]
+        lt_open, _, _, lt_close = args[0]
+        _, rt_high, rt_low, _ = args[1]
 
-        if (lt_close > rt_low) and (lt_open < rt_high):
+        if (lt_close > rt_high) and (lt_open < rt_low):
             return -1
 
         return 0
@@ -150,29 +150,39 @@ class HaramiCross(TwoLinePattern):
             else:
                 self.truth.append(0)
 
-        return self.truth
+        return np.array(self.truth)
 
 
 class Engulfing(TwoLinePattern):
     def confirm_bull_pattern(self, *args):
-        lt_open, lt_high, lt_low, lt_close = args[0]
-        rt_open, rt_high, rt_low, rt_close = args[1]
+        lt_open, _, _, lt_close = args[0]
+        rt_open, _, _, rt_close = args[1]
+
+        # print("Confirming bull pattern")
+        # print("left side is....", self.f(lt_open, lt_close))
+        # print("Right side is...", self.f(rt_open, rt_close), "\n")
 
         if(
-            abs(rt_open - rt_close) /
-            abs(lt_open - lt_close) > 0
+            rt_close < lt_open and
+            rt_open == lt_close and
+            1 < (abs(rt_open - rt_close) / abs(lt_open - lt_close)) <= 2.5
         ):
             return 1
 
         return 0
 
     def confirm_bear_pattern(self, *args):
-        lt_open, lt_high, lt_low, lt_close = args[0]
-        rt_open, rt_high, rt_low, rt_close = args[1]
+        lt_open, _, _, lt_close = args[0]
+        rt_open, _, _, rt_close = args[1]
+
+        # print("Confirming bear pattern")
+        # print("left side is....", self.f(lt_open, lt_close))
+        # print("Right side is...", self.f(rt_open, rt_close), "\n")
 
         if(
-            abs(rt_open - rt_close) /
-            abs(lt_open - lt_close) > 0
+            rt_close > lt_open and
+            rt_open == lt_close and
+            1 < (abs(rt_open - rt_close) / abs(lt_open - lt_close)) <= 2.5
         ):
             return -1
 
@@ -181,34 +191,42 @@ class Engulfing(TwoLinePattern):
 
 class PiercingDarkCloud(TwoLinePattern):
     def confirm_bull_pattern(self, *args):
-        lt_open, lt_high, lt_low, lt_close = args[0]
-        rt_open, rt_high, rt_low, rt_close = args[1]
+        lt_open, _, _, lt_close = args[0]
+        rt_open, _, _, rt_close = args[1]
 
         lt_middle = 0.5 * (lt_open + lt_close)
+
+        # print("left side is....", self.f(lt_open, lt_close))
+        # print("Right side is...", self.f(rt_open, rt_close), "\n")
 
         if (
             rt_open < lt_close and
             (
                 rt_close > lt_middle or
                 lt_middle > rt_close > lt_close
-            )
+            ) and
+            rt_close < lt_open
         ):
             return 1
 
         return 0
 
     def confirm_bear_pattern(self, *args):
-        lt_open, lt_high, lt_low, lt_close = args[0]
-        rt_open, rt_high, rt_low, rt_close = args[1]
+        lt_open, _, _, lt_close = args[0]
+        rt_open, _, _, rt_close = args[1]
 
         lt_middle = 0.5 * (lt_open + lt_close)
+
+        # print("left side is....", self.f(lt_open, lt_close))
+        # print("Right side is...", self.f(rt_open, rt_close), "\n")
 
         if (
             rt_open > lt_close and
             (
                 (rt_close < lt_middle) or
                 lt_middle > rt_close < lt_close
-            )
+            ) and
+            rt_close > lt_open
         ):
             return -1
 

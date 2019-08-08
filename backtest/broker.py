@@ -30,6 +30,18 @@ class Broker:
 
     def get_stats(self):
         print(f"Wins == {self.wins}\nLosses == {self.losses}")
-        print(f"Win percentage == {(self.wins/self.trades)*100}%")
-        print(f"Loss percentage == {(self.losses/self.trades)*100}%")
         print(f"Stale == {self.stale}")
+
+        try:
+            win_percent = (self.wins / self.trades) * 100
+        except ZeroDivisionError:
+            print("No win percentage")
+        else:
+            print(f"Win percentage == {win_percent}%")
+
+        try:
+            loss_percent = (self.losses / self.trades) * 100
+        except ZeroDivisionError:
+            print("No loss percentage")
+        else:
+            print(f"Loss percentage == {loss_percent}%")

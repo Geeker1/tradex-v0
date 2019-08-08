@@ -22,9 +22,11 @@ class BasePattern:
 
      """
 
+    columns = ['open', 'high', 'low', 'close']
+
     def __init__(self, array_x):
         try:
-            self.df = array_x.values
+            self.df = array_x[self.columns].values
         except AttributeError:
             try:
                 assert type(array_x) == np.ndarray

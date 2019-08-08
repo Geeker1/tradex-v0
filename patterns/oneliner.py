@@ -20,7 +20,7 @@ class Doji(BasePattern):
         self.truth = []
         ad = self.df
         for x in ad:
-            op, high, low, close = x[0], x[1], x[2], x[3]
+            op, _, _, close = x[0], x[1], x[2], x[3]
             if op == close:
                 self.truth.append(1)
             else:
@@ -33,16 +33,17 @@ class GravestoneDoji(BasePattern):
     f"""
     This class determines if the candle bars are dojis,
     appends 1 or 0 depending on if condition is true or not
-    
+
     Methods:
-        
-        iterate() : >>> This method loops through array of candle bars and tries to determine if
+
+        iterate() : >>> This method loops through array of
+                        candle bars and tries to determine if
                         it falls as a pattern or not
-                        
-        confirm_pattern(): >>> This method receives open,high,low,close values and tries to output if 
+
+        confirm_pattern(): >>> This method receives
+        open,high,low,close values and tries to output if
         it falls as Pattern or not...
-    
-    
+
     """
 
     def confirm_pattern(self, op, high, low, close):
@@ -61,12 +62,12 @@ class GravestoneDoji(BasePattern):
             else:
                 truth.append(0)
 
-        return truth
+        return np.array(truth)
 
 
 class DragonFlyDoji(GravestoneDoji):
-    def confirm_pattern(self):
-        if abs(op - high) / abs(op - low) < 3:
+    def confirm_pattern(self, op, high, low, close):
+        if abs(op - low) / abs(op - high) > 3:
             return 1
         return 0
 
@@ -83,31 +84,28 @@ class Hammer(BasePattern):
         for x in ad:
             op, high, low, close = x[0], x[1], x[2], x[3]
             real = abs(op - close)
-            func = self.f(op, close)
-            #             pressure = BasePattern.confirm_market_pressure(
-            #                 func,real,op,high,low,close
-            #             )
+            candle = self.f(op, close)
 
-            direction = func
-
-            if direction == "Bearish":
+            if candle == "Bearish":
                 if abs(op - low) != 0:
                     self.truth.append(0)
                     continue
-                integer = self.confirm_pattern(abs(close - high), real, ("Bearish", -1))
+                integer = self.confirm_pattern(
+                    abs(close - high), real, ("Bearish", -1))
                 self.truth.append(integer)
 
-            elif direction == "Bullish":
+            elif candle == "Bullish":
                 if abs(high - close) != 0:
                     self.truth.append(0)
                     continue
-                integer = self.confirm_pattern(abs(op - low), real, ("Bullish", 1))
+                integer = self.confirm_pattern(
+                    abs(op - low), real, ("Bullish", 1))
                 self.truth.append(integer)
 
-            elif direction == "Indecisive":
+            elif candle == "Indecisive":
                 self.truth.append(0)
 
-        return self.truth
+        return np.array(self.truth)
 
 
 class InvertedHammer(BasePattern):
@@ -129,20 +127,22 @@ class InvertedHammer(BasePattern):
                 if abs(close - high) != 0:
                     self.truth.append(0)
                     continue
-                integer = self.confirm_pattern(abs(op - low), real, ("Bearish", -1))
+                integer = self.confirm_pattern(
+                    abs(op - low), real, ("Bearish", -1))
                 self.truth.append(integer)
 
             elif direction == "Bullish":
                 if abs(op - low) != 0:
                     self.truth.append(0)
                     continue
-                integer = self.confirm_pattern(abs(close - high), real, ("Bullish", 1))
+                integer = self.confirm_pattern(
+                    abs(close - high), real, ("Bullish", 1))
                 self.truth.append(integer)
 
             elif direction == "Indecisive":
                 self.truth.append(0)
 
-        return self.truth
+        return np.array(self.truth)
 
 
 class Pinbar(BasePattern):
@@ -158,26 +158,30 @@ class Pinbar(BasePattern):
             op, high, low, close = x[0], x[1], x[2], x[3]
 
             real = abs(op - close)
-            direction = f(op, close)
-            if direction == "Bearish":
+            candle = self.f(op, close)
+            if candle == "Bearish":
                 integer = self.confirm_pattern(
                     abs(op - low), abs(close - high), real, ("Bearish", -1)
                 )
                 self.truth.append(integer)
 
-            elif direction == "Bullish":
+            elif candle == "Bullish":
                 integer = self.confirm_pattern(
                     abs(close - high), abs(op - low), real, ("Bullish", 1)
                 )
                 self.truth.append(integer)
 
-            elif direction == "Indecisive":
+            elif candle == "Indecisive":
                 self.truth.append(0)
         return np.array(self.truth)
 
 
 class InvertedPinbar(Pinbar):
     def confirm_pattern(self, up, leg, body, direction):
-        if round(body / leg) <= 3 and body / leg >= 1.8 and round(up / body) >= 2:
+        if (
+            round(body / leg) <= 3 and
+            body / leg >= 1.8 and
+            round(up / body) >= 2
+        ):
             return direction[-1]
         return 0

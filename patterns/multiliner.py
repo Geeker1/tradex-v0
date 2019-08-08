@@ -23,27 +23,51 @@ class MorningStar(BasePattern):
         rt_open, rt_high, rt_low, rt_close = args[2]
         mt_cond = args[3]
 
-        pt_candle_size = abs(pt_open - pt_close)
+        pt_candle_size = pt_open - pt_close
+        rt_candle_size = rt_close - rt_open
         pt_middle = (pt_close + pt_open) / 2
         rt_middle = (rt_close + rt_open) / 2
 
-        if abs(mt_close - mt_open) > pt_candle_size:
+        # Check that size of middle candlestick is greater
+        # than left or right candlestick and return 0
+
+        if (
+            abs(mt_close - mt_open) > (
+                pt_candle_size or rt_candle_size
+            )
+        ):
             return 0
 
-        if rt_close > pt_middle:
+        # Verify that there are long wicks and return 0
+
+        if (
+            (pt_high - pt_open) + (pt_close - pt_low) >
+            (pt_open - pt_middle) or
+            (rt_high - rt_close) + (rt_open - rt_low) >
+            (rt_close - rt_middle)
+        ):
+            return 0
+
+        if (
+            rt_close >= pt_middle and
+            pt_open >= rt_middle and
+            rt_open == pt_close
+        ):
             if (
                 mt_cond == "Bullish" or
                 mt_cond == "Indecisive"
             ):
                 if (
-                    mt_close < pt_middle and
-                    mt_close < rt_middle
+                    mt_close < (
+                        pt_middle and rt_middle
+                    )
                 ):
                     return 1
             elif mt_cond == "Bearish":
                 if (
-                    mt_open < pt_middle and
-                    mt_open < rt_middle
+                    mt_open < (
+                        pt_middle and rt_middle
+                    )
                 ):
                     return 1
         return 0
@@ -93,27 +117,51 @@ class EveningStar(BasePattern):
         rt_open, rt_high, rt_low, rt_close = args[2]
         mt_cond = args[3]
 
-        pt_candle_size = abs(pt_open - pt_close)
+        pt_candle_size = pt_close - pt_open
+        rt_candle_size = rt_open - rt_close
         pt_middle = (pt_close + pt_open) / 2
         rt_middle = (rt_close + rt_open) / 2
 
-        if abs(mt_close - mt_open) > pt_candle_size:
+        # Check that size of middle candlestick is greater
+        # than left or right candlestick and return 0
+
+        if (
+            abs(mt_close - mt_open) > (
+                pt_candle_size or rt_candle_size
+            )
+        ):
             return 0
 
-        if rt_close < pt_middle:
+        # Verify that there are  long wicks and return 0
+
+        if (
+            (pt_high - pt_close) + (pt_open - pt_low) >
+            (pt_close - pt_middle) or
+            (rt_high - rt_open) + (rt_close - rt_low) >
+            (rt_open - rt_middle)
+        ):
+            return 0
+
+        if (
+            rt_close <= pt_middle and
+            pt_close >= rt_middle and
+            rt_open == pt_close
+        ):
             if (
                 mt_cond == "Bearish" or
                 mt_cond == "Indecisive"
             ):
                 if (
-                    mt_close > pt_middle and
-                    mt_close > rt_middle
+                    mt_close > (
+                        pt_middle and rt_middle
+                    )
                 ):
                     return 1
             elif mt_cond == "Bullish":
                 if (
-                    mt_open > pt_middle and
-                    mt_open > rt_middle
+                    mt_open > (
+                        pt_middle and rt_middle
+                    )
                 ):
                     return 1
         return 0

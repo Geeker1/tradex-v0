@@ -126,14 +126,7 @@ class MarketPair:
             new_max = x[['high', 'low']].max().max()
             new_min = x[['high', 'low']].min().min()
 
-            if (last - init) >= 0:
-                high = new_max
-                low = new_min
-            elif (last - init) < 0:
-                high = new_min
-                low = new_max
-
-            return pd.Series([init, high, low, last], index=index)
+            return pd.Series([init, new_max, new_min, last], index=index)
 
             # Not hoping for this error though but just in case...
             raise(Exception('Na Mad Error wey dey here so....'))
