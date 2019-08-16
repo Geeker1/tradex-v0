@@ -60,16 +60,21 @@ class MorningStar(BasePattern):
                 if (
                     mt_close < (
                         pt_middle and rt_middle
-                    )
+                    ) and
+                    (mt_high and mt_close) < (pt_middle or rt_middle) and
+                    (mt_high - mt_close <= mt_open - mt_low)
                 ):
                     return 1
             elif mt_cond == "Bearish":
-                if (
-                    mt_open < (
-                        pt_middle and rt_middle
-                    )
-                ):
-                    return 1
+                return 0
+                # if (
+                #     mt_open < (
+                #         pt_middle and rt_middle
+                #     ) and
+                #     (mt_high and mt_open) >= (pt_middle or rt_middle) and
+                #     mt_high - mt_open <= mt_close - mt_low
+                # ):
+                #     return 1
         return 0
 
     def iterate(self):
@@ -154,16 +159,21 @@ class EveningStar(BasePattern):
                 if (
                     mt_close > (
                         pt_middle and rt_middle
-                    )
+                    ) and
+                    (mt_close and mt_low) > (pt_middle or rt_middle) and
+                    (mt_close - mt_low <= mt_high - mt_open)
                 ):
                     return 1
             elif mt_cond == "Bullish":
-                if (
-                    mt_open > (
-                        pt_middle and rt_middle
-                    )
-                ):
-                    return 1
+                return 0
+                # if (
+                #     mt_open > (
+                #         pt_middle and rt_middle
+                #     ) and
+                #     mt_open - mt_low >= (pt_middle or rt_middle) and
+                #     mt_open - mt_low <= mt_high - mt_close
+                # ):
+                #     return 1
         return 0
 
     def iterate(self):

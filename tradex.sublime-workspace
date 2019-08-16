@@ -4,12 +4,248 @@
 		"selected_items":
 		[
 			[
+				"def",
+				"def\tFunction"
+			],
+			[
+				"indi",
+				"indicator_array"
+			],
+			[
+				"indic",
+				"indicator_list"
+			],
+			[
+				"bea",
+				"bear"
+			],
+			[
+				"confr",
+				"confirm_bull_patterns"
+			],
+			[
+				"ver",
+				"verify_stochastic_bullish"
+			],
+			[
+				"conf",
+				"confirm_bull_macd"
+			],
+			[
+				"v",
+				"v3"
+			],
+			[
+				"mt",
+				"mt_high"
+			],
+			[
+				"mt_",
+				"mt_high"
+			],
+			[
+				"pt",
+				"pt_candle_size"
+			],
+			[
+				"rt_",
+				"rt_open"
+			],
+			[
+				"lt_",
+				"lt_close"
+			],
+			[
+				"em",
+				"ema100"
+			],
+			[
+				"ema",
+				"ema100"
+			],
+			[
+				"loss",
+				"loss_percent"
+			],
+			[
+				"win",
+				"win_percent"
+			],
+			[
+				"rt",
+				"rt_open"
+			],
+			[
+				"as",
+				"abs"
+			],
+			[
+				"pt_",
+				"pt_open"
+			],
+			[
+				"new",
+				"new_min"
+			],
+			[
+				"rs",
+				"rsi"
+			],
+			[
+				"haram",
+				"harami"
+			],
+			[
+				"mac",
+				"macd"
+			],
+			[
+				"confir",
+				"confirm_bear_macd"
+			],
+			[
+				"cof",
+				"confirm_bull_macd"
+			],
+			[
+				"re",
+				"records"
+			],
+			[
+				"co",
+				"confirm_bear_patterns"
+			],
+			[
+				"clo",
+				"cloud"
+			],
+			[
+				"Hara",
+				"Harami"
+			],
+			[
+				"verif",
+				"verify_stochastic_bearish"
+			],
+			[
+				"lt",
+				"lt_open"
+			],
+			[
+				"upd",
+				"update_stale"
+			],
+			[
+				"in",
+				"increase_amount"
+			],
+			[
+				"incre",
+				"increase_trades"
+			],
+			[
+				"incr",
+				"increase_win"
+			],
+			[
+				"tr",
+				"truth"
+			],
+			[
+				"pre",
+				"prev_op"
+			],
+			[
+				"las",
+				"last_op"
+			],
+			[
+				"last",
+				"last_close"
+			],
+			[
+				"update",
+				"update_indicators"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"f",
+				"f"
+			],
+			[
+				"In",
+				"InvertedHammer"
+			],
+			[
+				"fr",
+				"from"
+			],
+			[
 				"init",
-				"initials\tfunction"
+				"init"
+			],
+			[
+				"writ",
+				"write_points"
+			],
+			[
+				"M",
+				"M1"
+			],
+			[
+				"res",
+				"resample_frame"
+			],
+			[
+				"fill",
+				"fill"
+			],
+			[
+				"arr",
+				"arr"
+			],
+			[
+				"val",
+				"val2"
+			],
+			[
+				"Exe",
+				"Exception"
+			],
+			[
+				"exe",
+				"except"
+			],
+			[
+				"kill",
+				"kill_sockets"
+			],
+			[
+				"loop",
+				"loop_fill"
+			],
+			[
+				"e",
+				"ema4"
 			],
 			[
 				"time",
-				"time_range"
+				"timeperiod"
+			],
+			[
+				"indica",
+				"Indicator"
+			],
+			[
+				"sma",
+				"sma1"
+			],
+			[
+				"timefra",
+				"timeframes"
 			],
 			[
 				"dta",
@@ -38,10 +274,6 @@
 			[
 				"router",
 				"router_port\tparam"
-			],
-			[
-				"def",
-				"defs\tMethod"
 			],
 			[
 				"MarketPa",
@@ -84,10 +316,6 @@
 				"post_urls\tstatement"
 			],
 			[
-				"re",
-				"return\tkeyword"
-			],
-			[
 				"F",
 				"False\tkeyword"
 			],
@@ -110,10 +338,6 @@
 			[
 				"frma",
 				"frame"
-			],
-			[
-				"in",
-				"input_list"
 			],
 			[
 				"fetch",
@@ -236,10 +460,6 @@
 				"send_json"
 			],
 			[
-				"In",
-				"INTERMED_ROUTER\tstatement"
-			],
-			[
 				"return",
 				"return_stamp_interval"
 			],
@@ -294,226 +514,6 @@
 			[
 				"req",
 				"req_response\tfunction"
-			],
-			[
-				"roue",
-				"router_port\tstatement"
-			],
-			[
-				"sub",
-				"sub_port_no\tstatement"
-			],
-			[
-				"exce",
-				"except"
-			],
-			[
-				"databas",
-				"database_name\tstatement"
-			],
-			[
-				"marke",
-				"market_pair\tparam"
-			],
-			[
-				"_range",
-				"_range_1\tstatement"
-			],
-			[
-				"json",
-				"json_list\tparam"
-			],
-			[
-				"MARKE",
-				"MARKET_SUB_PORT\tstatement"
-			],
-			[
-				"value",
-				"value\tparam"
-			],
-			[
-				"Os",
-				"OSError\tclass"
-			],
-			[
-				"try",
-				"try\tTry/Except"
-			],
-			[
-				"thre",
-				"thread4\tstatement"
-			],
-			[
-				"Un",
-				"Unmarshal"
-			],
-			[
-				"New",
-				"NewSocket"
-			],
-			[
-				"Router",
-				"RouterServer"
-			],
-			[
-				"con",
-				"conv_int"
-			],
-			[
-				"Inter",
-				"InterRouterNo"
-			],
-			[
-				"Inte",
-				"InterRouterNo"
-			],
-			[
-				"Binary",
-				"BinaryServer"
-			],
-			[
-				"Bin",
-				"BinaryAppId"
-			],
-			[
-				"Tick",
-				"TickStructure"
-			],
-			[
-				"Pir",
-				"Println"
-			],
-			[
-				"l",
-				"log"
-			],
-			[
-				"Sub",
-				"SubId"
-			],
-			[
-				"Mesa",
-				"message"
-			],
-			[
-				"Set",
-				"SetUpSubClient"
-			],
-			[
-				"Se",
-				"Send"
-			],
-			[
-				"X",
-				"XPubXSubInterMediary"
-			],
-			[
-				"Xp",
-				"XpubPortNo"
-			],
-			[
-				"Xpu",
-				"XPubXSubInterMediary"
-			],
-			[
-				"str",
-				"strconv"
-			],
-			[
-				"B",
-				"BinaryApi"
-			],
-			[
-				"Conec",
-				"connected"
-			],
-			[
-				"Con",
-				"Context"
-			],
-			[
-				"N",
-				"NewContext"
-			],
-			[
-				"Print",
-				"Println"
-			],
-			[
-				"Pri",
-				"Print"
-			],
-			[
-				"Pi",
-				"Ping"
-			],
-			[
-				"Ping",
-				"PingResponse"
-			],
-			[
-				"Init",
-				"InitializeWebsocket"
-			],
-			[
-				"fuc",
-				"function"
-			],
-			[
-				"binary",
-				"binaryApi"
-			],
-			[
-				"MA",
-				"MetaTraderConnector"
-			],
-			[
-				"fill",
-				"fill_up_missing_indexes"
-			],
-			[
-				"pa",
-				"pair_name"
-			],
-			[
-				"IN",
-				"INTERMED_PORT\tstatement"
-			],
-			[
-				"p",
-				"publish\tfunction"
-			],
-			[
-				"_CO",
-				"_ZMQ_CONTEXT"
-			],
-			[
-				"_P",
-				"_PUB_SOCKET"
-			],
-			[
-				"Mar",
-				"MarketParser\tclass"
-			],
-			[
-				"new",
-				"newPosition"
-			],
-			[
-				"byte",
-				"byte_slice"
-			],
-			[
-				"string",
-				"string"
-			],
-			[
-				"io",
-				"ioutil"
-			],
-			[
-				"f",
-				"from"
 			]
 		]
 	},
@@ -640,22 +640,37 @@
 	},
 	"file_history":
 	[
+		"/home/devcode/Desktop/keras-tensor/m.html",
+		"/home/devcode/Desktop/keras-tensor/tradex/server/inter_binary.go",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/inter.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/backtest/connector.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/remote.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/fetch_history_api.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/fetch_history_data.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/base.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/mock_server.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/strategy/base.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/strategy/indicators.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/patterns/doubleliner.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/patterns/base.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/patterns/multiliner.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/patterns/oneliner.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/market/metatrader.py",
+		"/home/devcode/Desktop/keras-tensor/tradex/strategy/ind.pyx",
+		"/home/devcode/Desktop/keras-tensor/tradex/strategy/indi.py",
+		"/home/devcode/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/devcode/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
 		"/home/devcode/.config/sublime-text-3/Packages/anaconda_go/Anaconda_GO.sublime-settings",
 		"/home/devcode/.config/sublime-text-3/Packages/User/golang.sublime-settings",
-		"/home/devcode/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
-		"/home/devcode/Desktop/keras-tensor/tradex/market/metatrader.py",
-		"/home/devcode/Desktop/keras-tensor/tradex/market/remote.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/binary.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/xpubsub.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/binary_test.go",
-		"/home/devcode/Desktop/keras-tensor/tradex/server/inter_binary.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/reusables.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/engine/testo.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/parse_index.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/config.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/reuse.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/api.py",
-		"/home/devcode/Desktop/keras-tensor/tradex/market/base.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/apx.pyx",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/apx.c",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/fetch_history_hst.py",
@@ -664,8 +679,6 @@
 		"/home/devcode/Desktop/keras-tensor/tradex/tests/mocked_classes.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/tests/test_market.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/tests/test_patterns.py",
-		"/home/devcode/Desktop/keras-tensor/tradex/mock_server.py",
-		"/home/devcode/Desktop/keras-tensor/tradex/market/fetch_history_api.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/setup.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/xpubsub_test.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/README.md",
@@ -675,7 +688,6 @@
 		"/home/devcode/Desktop/keras-tensor/tradex/tests/golang/server_test.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/codex.ipc",
 		"/home/devcode/Desktop/keras-tensor/tradex/market/params.py",
-		"/home/devcode/Desktop/keras-tensor/tradex/patterns/doubleliner.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/requirements.txt",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/test/binary_test.go",
 		"/home/devcode/Desktop/keras-tensor/tradex/server/xpubsub1.go",
@@ -699,7 +711,6 @@
 		"/home/devcode/Desktop/keras-tensor/tradex/__init__.py",
 		"/home/devcode/.config/sublime-text-3/Packages/User/Pylinter.sublime-settings",
 		"/home/devcode/Desktop/keras-tensor/zeromq/personal_tries/backtest.py",
-		"/home/devcode/Desktop/keras-tensor/tradex/patterns/base.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/tests/patterns.py",
 		"/home/devcode/Desktop/keras-tensor/tradex/test.txt",
 		"/home/devcode/Desktop/keras-tensor/tradex/tests/test_wallet.py",
@@ -756,18 +767,7 @@
 		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/extend/public/app.css",
 		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/functions/src/sass/_mixins.scss",
 		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/range/public/app.css",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/if/src/sass/_mixins.scss",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/if/public/app.css",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/tiny/public/app.css",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/mixins/public/app.css",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/variables/public/app.css",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/parent/public/app.css",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/nesting/public/app.css",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/functions/public/app.css",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/bem/public/app.css",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/extend/src/sass/app.scss",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/mixins/src/sass/_mixins.scss",
-		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/mixins/src/sass/app.scss"
+		"/home/devcode/Desktop/sass_tuts/sass-fundamentals/exercises/if/src/sass/_mixins.scss"
 	],
 	"find":
 	{
@@ -785,6 +785,18 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"return o",
+			"o, h, l, c",
+			"self.get_ohlc",
+			"x+",
+			",s",
+			"x-",
+			"correct",
+			"s.",
+			"self",
+			"prev",
+			"last",
+			"current",
 			"pair_name",
 			"BinaryComApi",
 			"Binary",
@@ -866,7 +878,7 @@
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 114.0
+		"height": 116.0
 	},
 	"save_all_on_build": true,
 	"select_file":

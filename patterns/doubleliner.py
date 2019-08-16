@@ -75,6 +75,9 @@ class Harami(TwoLinePattern):
         lt_open, _, _, lt_close = args[0]
         rt_open, rt_high, rt_low, rt_close = args[1]
 
+        if not((lt_open - lt_close) / (rt_close - rt_open) > 2):
+            return 0
+
         if (
             (lt_open > rt_high and lt_open > rt_close) and
             (lt_close < rt_low and lt_close < rt_open)
@@ -86,6 +89,9 @@ class Harami(TwoLinePattern):
     def confirm_bear_pattern(self, *args):
         lt_open, _, _, lt_close = args[0]
         rt_open, rt_high, rt_low, rt_close = args[1]
+
+        if not((lt_close - lt_open) / (rt_open - rt_close) > 2):
+            return 0
 
         if (
             (lt_close > rt_open and lt_close > rt_high) and
@@ -158,13 +164,9 @@ class Engulfing(TwoLinePattern):
         lt_open, _, _, lt_close = args[0]
         rt_open, _, _, rt_close = args[1]
 
-        # print("Confirming bull pattern")
-        # print("left side is....", self.f(lt_open, lt_close))
-        # print("Right side is...", self.f(rt_open, rt_close), "\n")
-
         if(
             rt_close < lt_open and
-            rt_open == lt_close and
+            rt_open <= lt_close and
             1 < (abs(rt_open - rt_close) / abs(lt_open - lt_close)) <= 2.5
         ):
             return 1
@@ -175,13 +177,9 @@ class Engulfing(TwoLinePattern):
         lt_open, _, _, lt_close = args[0]
         rt_open, _, _, rt_close = args[1]
 
-        # print("Confirming bear pattern")
-        # print("left side is....", self.f(lt_open, lt_close))
-        # print("Right side is...", self.f(rt_open, rt_close), "\n")
-
         if(
             rt_close > lt_open and
-            rt_open == lt_close and
+            rt_open >= lt_close and
             1 < (abs(rt_open - rt_close) / abs(lt_open - lt_close)) <= 2.5
         ):
             return -1
@@ -192,20 +190,14 @@ class Engulfing(TwoLinePattern):
 class PiercingDarkCloud(TwoLinePattern):
     def confirm_bull_pattern(self, *args):
         lt_open, _, _, lt_close = args[0]
-        rt_open, _, _, rt_close = args[1]
+        rt_open, rt_high, rt_low, rt_close = args[1]
 
         lt_middle = 0.5 * (lt_open + lt_close)
 
-        # print("left side is....", self.f(lt_open, lt_close))
-        # print("Right side is...", self.f(rt_open, rt_close), "\n")
-
         if (
             rt_open < lt_close and
-            (
-                rt_close > lt_middle or
-                lt_middle > rt_close > lt_close
-            ) and
-            rt_close < lt_open
+            rt_close > lt_middle and
+            (rt_close and rt_high) < lt_open
         ):
             return 1
 
@@ -213,20 +205,14 @@ class PiercingDarkCloud(TwoLinePattern):
 
     def confirm_bear_pattern(self, *args):
         lt_open, _, _, lt_close = args[0]
-        rt_open, _, _, rt_close = args[1]
+        rt_open, rt_high, rt_low, rt_close = args[1]
 
         lt_middle = 0.5 * (lt_open + lt_close)
 
-        # print("left side is....", self.f(lt_open, lt_close))
-        # print("Right side is...", self.f(rt_open, rt_close), "\n")
-
         if (
             rt_open > lt_close and
-            (
-                (rt_close < lt_middle) or
-                lt_middle > rt_close < lt_close
-            ) and
-            rt_close > lt_open
+            rt_close < lt_middle and
+            (rt_close and rt_low) > lt_open
         ):
             return -1
 
